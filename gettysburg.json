@@ -1,33 +1,45 @@
 [
   {
-    "name":"Little Round Top",
-    "lat":39.791,
-    "lng":-77.236,
-    "type":"Terrain",
-    "desc":"Rocky hill on the Union left flank."
+    "name": "Little Round Top",
+    "lat": 39.791,
+    "lng": -77.236,
+    "type": "Terrain",
+    "desc": "Rocky hill on the Union left flank."
+  },
+  {
+    "name": "George Meade",
+    "lat": 39.811,
+    "lng": -77.234,
+    "type": "Commander",
+    "desc": "Commander of the Army of Potomac. This was headquarters of Meade at the Leister house during Gettysburg battle. The house was damaged by the cannon fire."
   },
 
   {
-    "name":"Big Round Top",
-    "lat":39.779,
-    "lng":-77.239,
-    "type":"Terrain",
-    "desc":"Highest hill on the battlefield."
+    "name": "Robert E. Lee",
+    "lat": 39.814255,
+    "lng": -77.245,
+    "type": "Commander",
+    "desc": "Commander of the Army of Northern Virginia."
   },
-
   {
-    "name":"Joshua Chamberlain",
-    "lat":39.791,
-    "lng":-77.236,
-    "type":"Commander",
-    "desc":"Commander of the 20th Maine."
+    "name": "Big Round Top",
+    "lat": 39.779,
+    "lng": -77.239,
+    "type": "Terrain",
+    "desc": "Highest hill on the battlefield."
   },
-
   {
-    "name":"Pennsylvania Memorial",
-    "lat":39.813,
-    "lng":-77.248,
-    "type":"Monument",
-    "desc":"Largest state memorial."
+    "name": "Joshua Chamberlain",
+    "lat": 39.791,
+    "lng": -77.236,
+    "type": "Commander",
+    "desc": "Commander of the 20th Maine."
+  },
+  {
+    "name": "Pennsylvania Memorial",
+    "lat": 39.8075,
+    "lng": -77.235063,
+    "type": "Monument",
+    "desc": "Largest state memorial."
   }
 ]

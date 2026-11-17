@@ -1,0 +1,30 @@
+[
+  {
+    "name":"Robert E. Lee",
+    "lat":39.849,
+    "lng":-77.354,
+    "type":"Commander",
+    "desc":"Commander of the Army of Northern Virginia. On June 30, 1863, Lee was near Cashtown concentrating Confederate forces before the unexpected meeting engagement at Gettysburg."
+  },
+  {
+    "name":"Henry Heth",
+    "lat":39.840,
+    "lng":-77.300,
+    "type":"Commander",
+    "desc":"Confederate division commander ordered toward Gettysburg on July 1. His movement initiated the fighting that developed into the Battle of Gettysburg."
+  },
+  {
+    "name":"John Buford",
+    "lat":39.835,
+    "lng":-77.250,
+    "type":"Commander",
+    "desc":"Union cavalry commander who recognized the importance of the high ground south of Gettysburg and deployed his troopers west of town to delay Confederate advances."
+  },
+  {
+    "name":"John Reynolds",
+    "lat":39.820,
+    "lng":-77.280,
+    "type":"Commander",
+    "desc":"Commander of Union I Corps. Reynolds was moving toward Gettysburg to support Buford's cavalry and would arrive during the battle's opening hours."
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "name":"Lee Begins Withdrawal",
+    "lat":39.820,
+    "lng":-77.250,
+    "type":"Commander",
+    "desc":"Following the failure of Pickett's Charge on July 3, Lee began organizing the withdrawal of the Army of Northern Virginia toward the Potomac River."
+  },
+  {
+    "name":"Fairfield",
+    "lat":39.787,
+    "lng":-77.367,
+    "type":"Battle",
+    "desc":"Important cavalry action west of Gettysburg during the Confederate retreat. Union cavalry attempted to disrupt withdrawal routes."
+  },
+  {
+    "name":"Monterey Pass",
+    "lat":39.740,
+    "lng":-77.470,
+    "type":"Battle",
+    "desc":"Night battle fought during a rainstorm as Union cavalry attacked Confederate wagon trains moving through the mountain pass."
+  },
+  {
+    "name":"Hagerstown",
+    "lat":39.641,
+    "lng":-77.720,
+    "type":"Battle",
+    "desc":"Lee concentrated his army around Hagerstown while searching for a safe crossing back into Virginia."
+  },
+  {
+    "name":"Williamsport Crossing",
+    "lat":39.600,
+    "lng":-77.820,
+    "type":"Battle",
+    "desc":"Confederate forces crossed the Potomac River after completing their withdrawal from Pennsylvania, ending the Gettysburg Campaign."
+  },
+  {
+    "name":"J.E.B. Stuart",
+    "lat":39.710,
+    "lng":-77.560,
+    "type":"Commander",
+    "desc":"Stuart's cavalry screened Lee's retreat and protected Confederate columns moving toward the Potomac."
+  },
+  {
+    "name":"George G. Meade",
+    "lat":39.700,
+    "lng":-77.500,
+    "type":"Commander",
+    "desc":"Meade cautiously pursued Lee following the battle, seeking opportunities to strike the retreating Confederate army."
+  }
+]

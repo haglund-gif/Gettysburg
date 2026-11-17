@@ -1,0 +1,58 @@
+[
+  {
+    "name":"Little Round Top",
+    "lat":39.791,
+    "lng":-77.236,
+    "type":"Terrain",
+    "desc":"Rocky hill on the Union left flank."
+  },
+  {
+    "name":"Big Round Top",
+    "lat":39.779,
+    "lng":-77.239,
+    "type":"Terrain",
+    "desc":"Highest hill on the battlefield."
+  },
+  {
+    "name":"Cemetery Hill",
+    "lat":39.820,
+    "lng":-77.230,
+    "type":"Terrain",
+    "desc":"A key Union strongpoint and artillery platform."
+  },
+  {
+    "name":"Cemetery Ridge",
+    "lat":39.812,
+    "lng":-77.233,
+    "type":"Terrain",
+    "desc":"Backbone of the Union defensive line."
+  },
+  {
+    "name":"Culp's Hill",
+    "lat":39.826,
+    "lng":-77.221,
+    "type":"Terrain",
+    "desc":"Wooded hill anchoring the Union right flank."
+  },
+  {
+    "name":"Devil's Den",
+    "lat":39.795,
+    "lng":-77.241,
+    "type":"Terrain",
+    "desc":"Famous boulder field southwest of Little Round Top."
+  },
+  {
+    "name":"The Wheatfield",
+    "lat":39.798,
+    "lng":-77.244,
+    "type":"Terrain",
+    "desc":"Scene of repeated attacks and counterattacks."
+  },
+  {
+    "name":"Peach Orchard",
+    "lat":39.805,
+    "lng":-77.241,
+    "type":"Terrain",
+    "desc":"Advanced position occupied by Sickles' corps."
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "name":"Little Round Top",
+    "lat":39.791,
+    "lng":-77.236,
+    "type":"Terrain",
+    "desc":"Rocky hill on the Union left flank."
+  },
+
+  {
+    "name":"Big Round Top",
+    "lat":39.779,
+    "lng":-77.239,
+    "type":"Terrain",
+    "desc":"Highest hill on the battlefield."
+  },
+
+  {
+    "name":"Joshua Chamberlain",
+    "lat":39.791,
+    "lng":-77.236,
+    "type":"Commander",
+    "desc":"Commander of the 20th Maine."
+  },
+
+  {
+    "name":"Pennsylvania Memorial",
+    "lat":39.813,
+    "lng":-77.248,
+    "type":"Monument",
+    "desc":"Largest state memorial."
+  }
+]

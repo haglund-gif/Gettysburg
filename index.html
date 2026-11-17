@@ -88,6 +88,33 @@ h2{
            placeholder="Search monument, person, place">
 
     <button onclick="doSearch()">Search</button>
+
+
+<button onclick="loadPeriod('prebattle')">
+Pre-Battle
+</button>
+
+<button onclick="loadPeriod('july1')">
+July 1
+</button>
+
+<button onclick="loadPeriod('july2')">
+July 2
+</button>
+
+<button onclick="loadPeriod('july3')">
+July 3
+</button>
+
+<button onclick="loadPeriod('retreat')">
+Retreat
+</button>
+
+
+
+
+
+
 </div>
 
 <div id="container">
@@ -102,23 +129,56 @@ h2{
             Click a marker on the map.
         </div>
 
-        <div class="legend">
-            <h3>Elevation Colors</h3>
 
-            <div><span class="color" style="background:green"></span>Low Ground</div>
-            <div><span class="color" style="background:yellow"></span>Medium</div>
-            <div><span class="color" style="background:orange"></span>High</div>
-            <div><span class="color" style="background:red"></span>Highest Ground</div>
-        </div>
+
+
+
+
+
+
+        
 <div id="sidebar">
 
-    <h2>Gettysburg Explorer</h2>
+<hr>
+ 
+<p>
+Interactive battlefield map of Gettysburg.
+Click any monument, commander, battle,
+or terrain feature to learn more.
+</p>
 
-    <div id="info">
-        Click a marker on the map.
-    </div>
+<h4>Map Symbols</h4>
 
-    <hr>
+<p>
+⛰️ Terrain Features<br>
+⭐ Commanders<br>
+🏛️ Monuments<br>
+⚔️ Battles
+</p>
+
+<h4>Quick Search</h4>
+
+<p>
+Try:
+<ul>
+<li>Little Round Top</li>
+<li>Lee</li>
+<li>Chamberlain</li>
+<li>Pickett's Charge</li>
+<li>Devil's Den</li>
+<li>Cemetery Hill</li>
+</ul>
+</p>
+
+
+
+
+  
+</div>
+
+
+
+
 
     <small>
     Gettysburg Explorer<br>
@@ -193,7 +253,11 @@ L.circle(
 
 const monuments = L.layerGroup().addTo(map);
 const commanders = L.layerGroup().addTo(map);
+
 const terrain = L.layerGroup().addTo(map);
+const timelineLayer = L.layerGroup().addTo(map);
+
+
 
 const markerList=[];
 
@@ -206,6 +270,10 @@ function addItemToMap(item){
 
     if(item.type === "Commander")
         icon = commanderIcon;
+
+    if(item.type==="Battle")
+        icon = battleIcon;
+
 
     if(item.type === "Terrain")
         icon = terrainIcon;
@@ -312,7 +380,11 @@ function doSearch() {
 
     for(const entry of markerList){
 
-        if(entry.name.includes(text)){
+       if(
+    entry.name.includes(text) ||
+    text.includes(entry.name)
+)
+{
 
             map.setView(
                 entry.marker.getLatLng(),
@@ -338,36 +410,144 @@ function doSearch() {
 }
 
 
-console.log("Starting JSON load");
 
-fetch('gettysburg.json')
-.then(response => {
 
-    console.log("Response received");
-    return response.json();
+function loadPeriod(period){
 
-})
-.then(data => {
+    timelineLayer.clearLayers();
 
-    console.log(data);
+    fetch('data/' + period + '.json')
 
-    data.forEach(item => {
-        addItemToMap(item);
+    .then(response => response.json())
+
+    .then(data => {
+
+        data.forEach(item => {
+
+            let icon = battleIcon;
+
+            if(item.type === "Commander")
+                icon = commanderIcon;
+
+            if(item.type === "Battle")
+                icon = battleIcon;
+
+            const marker = L.marker(
+                [item.lat,item.lng],
+                {
+                    icon: icon
+                }
+            );
+
+            marker.bindPopup(
+                "<b>" +
+                item.name +
+                "</b><br>" +
+                item.type
+            );
+
+            marker.on('click',()=>{
+
+                document.getElementById('info').innerHTML =
+
+                    "<h3 class='infoTitle'>" +
+                    item.name +
+                    "</h3>" +
+
+                    "<b>" +
+                    item.type +
+                    "</b><br><br>" +
+
+                    item.desc;
+
+            });
+
+            marker.addTo(timelineLayer);
+
+            markerList.push({
+                name:item.name.toLowerCase(),
+                marker:marker,
+                item:item
+            });
+
+        });
+
+    })
+
+    .catch(error => {
+
+        console.error(
+            "Failed loading " + period,
+            error
+        );
+
     });
 
-    console.log(
-        data.length +
-        " locations loaded"
-    );
+}
+
+
+
+
+
+
+
+console.log("Starting JSON load");
+
+/* TERRAIN */
+
+fetch('data/terrain.json')
+
+.then(response => response.json())
+
+.then(data => {
+
+    data.forEach(item => {
+
+        addItemToMap(item);
+
+    });
 
 })
+
 .catch(error => {
 
-    console.error(error);
+    console.error(
+        "Terrain load failed",
+        error
+    );
 
 });
 
 
+/* MONUMENTS */
+
+fetch('data/monuments.json')
+
+.then(response => response.json())
+
+.then(data => {
+
+    data.forEach(item => {
+
+        addItemToMap(item);
+
+    });
+
+})
+
+.catch(error => {
+
+    console.error(
+        "Monuments load failed",
+        error
+    );
+
+});
+
+
+/* START TIMELINE */
+
+loadPeriod('prebattle');
 </script>
 
 </body>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gettysburg Explorer</title>
+
+<link rel="stylesheet"
+ href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<style>
+html,body{
+    margin:0;
+    height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+#toolbar{
+    height:50px;
+    background:#1c2c44;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:0 10px;
+    gap:10px;
+}
+
+#searchBox{
+    width:250px;
+    padding:6px;
+}
+
+#container{
+    display:flex;
+    height:calc(100% - 50px);
+}
+
+#map{
+    flex:1;
+}
+
+#sidebar{
+    width:320px;
+    border-left:1px solid #ccc;
+    padding:12px;
+    overflow:auto;
+    background:#fafafa;
+}
+
+h2{
+    margin-top:0;
+}
+
+.infoTitle{
+    color:#15395b;
+}
+
+.legend{
+    margin-top:15px;
+    font-size:14px;
+}
+
+.color{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    margin-right:5px;
+}
+
+
+.leaflet-div-icon{
+    background:transparent;
+    border:none;
+    font-size:28px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="toolbar">
+    <strong>Gettysburg Explorer</strong>
+
+    <input id="searchBox"
+           placeholder="Search monument, person, place">
+
+    <button onclick="doSearch()">Search</button>
+</div>
+
+<div id="container">
+
+    <div id="map"></div>
+
+    <div id="sidebar">
+
+        <h2>Gettysburg Explorer</h2>
+
+        <div id="info">
+            Click a marker on the map.
+        </div>
+
+        <div class="legend">
+            <h3>Elevation Colors</h3>
+
+            <div><span class="color" style="background:green"></span>Low Ground</div>
+            <div><span class="color" style="background:yellow"></span>Medium</div>
+            <div><span class="color" style="background:orange"></span>High</div>
+            <div><span class="color" style="background:red"></span>Highest Ground</div>
+        </div>
+<div id="sidebar">
+
+    <h2>Gettysburg Explorer</h2>
+
+    <div id="info">
+        Click a marker on the map.
+    </div>
+
+    <hr>
+
+    <small>
+    Gettysburg Explorer<br>
+    Basemaps ©Sources: Esri, Maxar, Earthstar Geographics, USDA FSA, USGS<br>
+    Historical information compiled from public sources. Major GPS coordinates taken by author.
+    </small>
+
+</div>
+   
+
+ </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+//=================================================
+// MAP
+//=================================================
+
+const map = L.map('map').setView([39.830,-77.231],13);
+
+const osm = L.tileLayer(
+'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+{
+    attribution:'Tiles © Esri'
+}).addTo(map);
+//=================================================
+// ELEVATION OVERLAY (SIMPLE DEMO)
+//=================================================
+
+const elevationLayer = L.layerGroup();
+
+L.circle(
+    [39.792,-77.236],
+    {
+        radius:900,
+        color:'red',
+        fillColor:'red',
+        fillOpacity:.25
+    }).addTo(elevationLayer);
+
+L.circle(
+    [39.820,-77.230],
+    {
+        radius:1000,
+        color:'orange',
+        fillColor:'orange',
+        fillOpacity:.20
+    }).addTo(elevationLayer);
+
+L.circle(
+    [39.835,-77.245],
+    {
+        radius:1200,
+        color:'yellow',
+        fillColor:'yellow',
+        fillOpacity:.15
+    }).addTo(elevationLayer);
+
+// elevationLayer.addTo(map);
+
+//=================================================
+// DATA
+//=================================================
+
+ //=================================================
+// LAYERS
+//=================================================
+
+const monuments = L.layerGroup().addTo(map);
+const commanders = L.layerGroup().addTo(map);
+const terrain = L.layerGroup().addTo(map);
+
+const markerList=[];
+
+function addItemToMap(item){
+
+    let icon = terrainIcon;
+
+    if(item.type === "Monument")
+        icon = monumentIcon;
+
+    if(item.type === "Commander")
+        icon = commanderIcon;
+
+    if(item.type === "Terrain")
+        icon = terrainIcon;
+
+    const marker = L.marker(
+        [parseFloat(item.lat), parseFloat(item.lng)],
+        {
+            icon: icon
+        }
+    );
+
+    marker.bindPopup(
+        "<b>" + item.name + "</b><br>" +
+        item.type
+    );
+
+    marker.on("click", () => {
+
+        document.getElementById("info").innerHTML =
+            "<h3 class='infoTitle'>" +
+            item.name +
+            "</h3>" +
+            "<b>" + item.type +
+            "</b><br><br>" +
+            item.desc;
+
+    });
+
+    if(item.type === "Monument")
+        marker.addTo(monuments);
+
+    if(item.type === "Commander")
+        marker.addTo(commanders);
+
+    if(item.type === "Terrain")
+        marker.addTo(terrain);
+
+    markerList.push({
+        name: item.name.toLowerCase(),
+        marker: marker,
+        item: item
+    });
+
+}
+
+
+
+
+/* BATTLEFIELD ICONS */
+
+const monumentIcon = L.divIcon({
+    html:"🏛️",
+    className:"",
+    iconSize:[32,32]
+});
+
+const commanderIcon = L.divIcon({
+    html:"⭐",
+    className:"",
+    iconSize:[32,32]
+});
+
+const terrainIcon = L.divIcon({
+    html:"⛰️",
+    className:"",
+    iconSize:[32,32]
+});
+
+const battleIcon = L.divIcon({
+    html:"⚔️",
+    className:"",
+    iconSize:[32,32]
+});
+
+
+
+
+
+ 
+
+L.control.layers(
+{
+    "OpenStreetMap":osm
+},
+{
+    "Monuments":monuments,
+    "Commanders":commanders,
+    "Terrain Features":terrain,
+    "Elevation Overlay":elevationLayer
+}
+).addTo(map);
+
+//=================================================
+// SEARCH
+//=================================================
+
+function doSearch() {
+
+    const text = document
+        .getElementById("searchBox")
+        .value
+        .trim()
+        .toLowerCase();
+
+    for(const entry of markerList){
+
+        if(entry.name.includes(text)){
+
+            map.setView(
+                entry.marker.getLatLng(),
+                15
+            );
+
+            entry.marker.openPopup();
+
+            document.getElementById("info").innerHTML =
+                "<h3 class='infoTitle'>" +
+                entry.item.name +
+                "</h3>" +
+                "<b>" +
+                entry.item.type +
+                "</b><br><br>" +
+                entry.item.desc;
+
+            return;
+        }
+    }
+
+    alert("Not found");
+}
+
+
+console.log("Starting JSON load");
+
+fetch('gettysburg.json')
+.then(response => {
+
+    console.log("Response received");
+    return response.json();
+
+})
+.then(data => {
+
+    console.log(data);
+
+    data.forEach(item => {
+        addItemToMap(item);
+    });
+
+    console.log(
+        data.length +
+        " locations loaded"
+    );
+
+})
+.catch(error => {
+
+    console.error(error);
+
+});
+
+
+</script>
+
+</body>
+</html>

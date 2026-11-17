@@ -1,0 +1,44 @@
+[
+  {
+    "name":"John Buford",
+    "lat":39.833,
+    "lng":-77.250,
+    "type":"Commander",
+    "desc":"Buford's cavalry fought a delaying action west of Gettysburg on the morning of July 1, buying time for Union infantry to occupy favorable terrain."
+  },
+  {
+    "name":"John Reynolds",
+    "lat":39.832,
+    "lng":-77.248,
+    "type":"Commander",
+    "desc":"Reynolds arrived to support Buford and was killed while directing Union troops near McPherson Ridge."
+  },
+  {
+    "name":"Oliver O. Howard",
+    "lat":39.821,
+    "lng":-229,
+    "type":"Commander",
+    "desc":"Howard helped establish the Union defensive position centered on Cemetery Hill after the first day's retreat through Gettysburg."
+  },
+  {
+    "name":"Abner Doubleday",
+    "lat":39.831,
+    "lng":-77.247,
+    "type":"Commander",
+    "desc":"Doubleday assumed command of the Union I Corps after Reynolds was killed."
+  },
+  {
+    "name":"Henry Heth",
+    "lat":39.834,
+    "lng":-77.252,
+    "type":"Commander",
+    "desc":"Heth's Confederate division initiated the fighting west of Gettysburg on July 1."
+  },
+  {
+    "name":"Richard S. Ewell",
+    "lat":39.840,
+    "lng":-77.235,
+    "type":"Commander",
+    "desc":"Ewell's corps arrived from the north and participated in successful attacks that drove Union forces through Gettysburg."
+  }
+]

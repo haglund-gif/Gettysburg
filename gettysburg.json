@@ -28,6 +28,402 @@
     "type": "Terrain",
     "desc": "Highest hill on the battlefield."
   },
+
+
+{
+  "name":"Reynolds Woods",
+  "lat":39.831,
+  "lng":-77.248,
+  "type":"Terrain",
+  "desc":"Woodlot west of Gettysburg where some of the fiercest first-day fighting occurred. General Reynolds was mortally wounded nearby."
+},
+{
+  "name":"Trostle Farm",
+  "lat":39.804,
+  "lng":-77.240,
+  "type":"Terrain",
+  "desc":"Farmstead near the Peach Orchard that witnessed intense fighting on July 2. The barn still bears artillery damage."
+},
+{
+  "name":"Codori Farm",
+  "lat":39.811,
+  "lng":-77.241,
+  "type":"Terrain",
+  "desc":"Farm located near the center of Pickett's Charge. Confederate troops crossed its fields during the assault."
+},
+{
+  "name":"Bryan Farm",
+  "lat":39.819,
+  "lng":-77.242,
+  "type":"Terrain",
+  "desc":"Property situated behind portions of the Union line on Cemetery Ridge and associated with Federal defensive positions."
+},
+{
+  "name":"Ziegler's Grove",
+  "lat":39.815,
+  "lng":-77.233,
+  "type":"Terrain",
+  "desc":"Small grove of trees near the Union center. The area became a focal point during Pickett's Charge."
+},
+{
+  "name":"Cemetery Ridge",
+  "lat":39.812,
+  "lng":-77.233,
+  "type":"Terrain",
+  "desc":"Backbone of the Union defensive line. The ridge stretched south from Cemetery Hill and played a central role throughout the battle."
+},
+{
+  "name":"Powers Hill",
+  "lat":39.818,
+  "lng":-77.214,
+  "type":"Terrain",
+  "desc":"Important Union artillery position supporting the right flank near Culp's Hill."
+},
+{
+  "name":"Benner's Hill",
+  "lat":39.836,
+  "lng":-77.214,
+  "type":"Terrain",
+  "desc":"Confederate artillery position east of Gettysburg. Batteries here exchanged fire with Union guns on Cemetery Hill."
+},
+{
+  "name":"East Cavalry Field",
+  "lat":39.850,
+  "lng":-77.200,
+  "type":"Terrain",
+  "desc":"Site of the major cavalry battle fought between Stuart's Confederate cavalry and Union horsemen under Gregg and Custer on July 3."
+},
+{
+  "name":"Farnsworth's Charge",
+  "lat":39.799,
+  "lng":-77.253,
+  "type":"Battle",
+  "desc":"Union cavalry assault launched late on July 3 against Confederate positions near Big Round Top. The attack suffered heavy losses."
+},
+{
+  "name":"Pickett's Charge",
+  "lat":39.813,
+  "lng":-77.236,
+  "type":"Battle",
+  "desc":"Massive Confederate assault on July 3 involving divisions under Pickett, Pettigrew, and Trimble. It ended in a costly Confederate defeat."
+},
+{
+  "name":"Gettysburg National Cemetery",
+  "lat":39.821,
+  "lng":-77.231,
+  "type":"Monument",
+  "desc":"Final resting place for Union soldiers killed in the battle and the site of Abraham Lincoln's Gettysburg Address."
+},
+{
+  "name":"Abraham Lincoln",
+  "lat":39.821,
+  "lng":-77.231,
+  "type":"Commander",
+  "desc":"Sixteenth President of the United States. Lincoln delivered the Gettysburg Address at the cemetery dedication on November 19, 1863."
+},
+
+
+
+
+
+
+{
+  "name":"James Longstreet",
+  "lat":39.808,
+  "lng":-77.258,
+  "type":"Commander",
+  "desc":"Lee's senior corps commander. Longstreet directed major Confederate attacks against the Union left flank on July 2 and expressed reservations about the July 3 assault that became known as Pickett's Charge."
+},
+{
+  "name":"Winfield Scott Hancock",
+  "lat":39.817,
+  "lng":-77.230,
+  "type":"Commander",
+  "desc":"Commander of the Union II Corps. Hancock helped organize Union defenses on Cemetery Ridge and played a critical role in holding the center of the Federal line."
+},
+{
+  "name":"John Reynolds",
+  "lat":39.832,
+  "lng":-77.249,
+  "type":"Commander",
+  "desc":"One of the Union Army's most respected leaders. Reynolds was killed early on July 1 while directing troops north and west of Gettysburg."
+},
+{
+  "name":"John Buford",
+  "lat":39.834,
+  "lng":-77.251,
+  "type":"Commander",
+  "desc":"Union cavalry commander whose troopers delayed Confederate forces on July 1, buying time for Union infantry to reach and defend the high ground south of town."
+},
+{
+  "name":"Richard S. Ewell",
+  "lat":39.841,
+  "lng":-77.238,
+  "type":"Commander",
+  "desc":"Commander of the Confederate Second Corps. Ewell's forces attacked Culp's Hill and Cemetery Hill and have long been associated with debates over the first day's fighting."
+},
+{
+  "name":"J.E.B. Stuart",
+  "lat":39.847,
+  "lng":-77.220,
+  "type":"Commander",
+  "desc":"Commander of Confederate cavalry. Stuart arrived late during the Gettysburg Campaign and fought an important cavalry engagement east of Gettysburg on July 3."
+},
+{
+  "name":"George Pickett",
+  "lat":39.815,
+  "lng":-77.255,
+  "type":"Commander",
+  "desc":"Confederate division commander whose troops formed a major component of the July 3 assault remembered as Pickett's Charge."
+},
+{
+  "name":"Cemetery Hill",
+  "lat":39.820,
+  "lng":-77.230,
+  "type":"Terrain",
+  "desc":"A key Union strongpoint and artillery platform. Cemetery Hill formed the center of the famous fishhook-shaped Union defensive line throughout the battle."
+},
+{
+  "name":"Devil's Den",
+  "lat":39.795,
+  "lng":-77.241,
+  "type":"Terrain",
+  "desc":"A dramatic field of massive boulders southwest of Little Round Top. Fierce fighting occurred here on July 2 during Longstreet's attack."
+},
+{
+  "name":"The Wheatfield",
+  "lat":39.798,
+  "lng":-77.244,
+  "type":"Terrain",
+  "desc":"Scene of repeated attacks and counterattacks on July 2. The area changed hands several times and became one of the bloodiest locations on the battlefield."
+},
+{
+  "name":"Peach Orchard",
+  "lat":39.805,
+  "lng":-77.241,
+  "type":"Terrain",
+  "desc":"The advanced position occupied by General Sickles' corps. Confederate attacks shattered the salient and contributed to severe Union losses."
+},
+{
+  "name":"Culp's Hill",
+  "lat":39.826,
+  "lng":-77.221,
+  "type":"Terrain",
+  "desc":"Wooded hill anchoring the Union right flank. Intense combat occurred here on July 2 and July 3 as Confederate forces attempted to turn the Federal line."
+},
+
+{
+  "name":"Reynolds Woods",
+  "lat":39.831,
+  "lng":-77.248,
+  "type":"Terrain",
+  "desc":"Woodlot west of Gettysburg where some of the fiercest first-day fighting occurred. General Reynolds was mortally wounded nearby."
+},
+{
+  "name":"Trostle Farm",
+  "lat":39.804,
+  "lng":-77.240,
+  "type":"Terrain",
+  "desc":"Farmstead near the Peach Orchard that witnessed intense fighting on July 2. The barn still bears artillery damage."
+},
+{
+  "name":"Codori Farm",
+  "lat":39.811,
+  "lng":-77.241,
+  "type":"Terrain",
+  "desc":"Farm located near the center of Pickett's Charge. Confederate troops crossed its fields during the assault."
+},
+{
+  "name":"Bryan Farm",
+  "lat":39.819,
+  "lng":-77.242,
+  "type":"Terrain",
+  "desc":"Property situated behind portions of the Union line on Cemetery Ridge and associated with Federal defensive positions."
+},
+{
+  "name":"Ziegler's Grove",
+  "lat":39.815,
+  "lng":-77.233,
+  "type":"Terrain",
+  "desc":"Small grove of trees near the Union center. The area became a focal point during Pickett's Charge."
+},
+{
+  "name":"Cemetery Ridge",
+  "lat":39.812,
+  "lng":-77.233,
+  "type":"Terrain",
+  "desc":"Backbone of the Union defensive line. The ridge stretched south from Cemetery Hill and played a central role throughout the battle."
+},
+{
+  "name":"Powers Hill",
+  "lat":39.818,
+  "lng":-77.214,
+  "type":"Terrain",
+  "desc":"Important Union artillery position supporting the right flank near Culp's Hill."
+},
+{
+  "name":"Benner's Hill",
+  "lat":39.836,
+  "lng":-77.214,
+  "type":"Terrain",
+  "desc":"Confederate artillery position east of Gettysburg. Batteries here exchanged fire with Union guns on Cemetery Hill."
+},
+{
+  "name":"East Cavalry Field",
+  "lat":39.850,
+  "lng":-77.200,
+  "type":"Terrain",
+  "desc":"Site of the major cavalry battle fought between Stuart's Confederate cavalry and Union horsemen under Gregg and Custer on July 3."
+},
+{
+  "name":"Farnsworth's Charge",
+  "lat":39.799,
+  "lng":-77.253,
+  "type":"Battle",
+  "desc":"Union cavalry assault launched late on July 3 against Confederate positions near Big Round Top. The attack suffered heavy losses."
+},
+ 
+ 
+{
+  "name":"A. P. Hill",
+  "lat":39.836,
+  "lng":-77.246,
+  "type":"Commander",
+  "desc":"Commanded the Confederate Third Corps. His troops initiated the fighting west of Gettysburg on July 1 and played major roles throughout the battle."
+},
+{
+  "name":"Oliver O. Howard",
+  "lat":39.821,
+  "lng":-77.229,
+  "type":"Commander",
+  "desc":"Commander of the Union XI Corps. He helped establish the Union defensive position centered on Cemetery Hill."
+},
+{
+  "name":"Daniel Sickles",
+  "lat":39.805,
+  "lng":-77.241,
+  "type":"Commander",
+  "desc":"Union III Corps commander. His controversial advance to the Peach Orchard created a vulnerable salient in the Union line."
+},
+{
+  "name":"Lewis Armistead",
+  "lat":39.813,
+  "lng":-77.236,
+  "type":"Commander",
+  "desc":"Confederate brigadier general who crossed the stone wall during Pickett's Charge before being mortally wounded."
+},
+{
+  "name":"John Gibbon",
+  "lat":39.814,
+  "lng":-77.233,
+  "type":"Commander",
+  "desc":"Union division commander whose troops helped repel Pickett's Charge and hold the center of Cemetery Ridge."
+},
+{
+  "name":"Henry Heth",
+  "lat":39.834,
+  "lng":-77.252,
+  "type":"Commander",
+  "desc":"Confederate division commander whose movement toward Gettysburg on July 1 helped trigger the battle."
+},
+{
+  "name":"Abner Doubleday",
+  "lat":39.832,
+  "lng":-77.247,
+  "type":"Commander",
+  "desc":"Union I Corps commander after Reynolds' death. Directed forces resisting Confederate attacks on the first day."
+},
+{
+  "name":"Little Round Top Monument Area",
+  "lat":39.792,
+  "lng":-77.236,
+  "type":"Monument",
+  "desc":"Cluster of monuments marking the regiments that defended Little Round Top during fighting on July 2."
+},
+{
+  "name":"Virginia Monument",
+  "lat":39.820,
+  "lng":-77.252,
+  "type":"Monument",
+  "desc":"Features a prominent equestrian statue of Robert E. Lee and honors Virginia soldiers who fought at Gettysburg."
+},
+{
+  "name":"Eternal Light Peace Memorial",
+  "lat":39.830,
+  "lng":-77.232,
+  "type":"Monument",
+  "desc":"Dedicated in 1938 during the reunion of Union and Confederate veterans as a symbol of national reconciliation."
+},
+{
+  "name":"72nd Pennsylvania Monument",
+  "lat":39.814,
+  "lng":-77.235,
+  "type":"Monument",
+  "desc":"One of Gettysburg's most recognizable monuments, located near the Angle and the High Water Mark."
+},
+{
+  "name":"High Water Mark Memorial",
+  "lat":39.813,
+  "lng":-77.235,
+  "type":"Monument",
+  "desc":"Marks the symbolic furthest advance of Confederate forces during Pickett's Charge on July 3."
+},
+{
+  "name":"The Angle",
+  "lat":39.813,
+  "lng":-77.235,
+  "type":"Terrain",
+  "desc":"A bend in the stone wall on Cemetery Ridge that became the focal point of Pickett's Charge."
+},
+{
+  "name":"Seminary Ridge",
+  "lat":39.835,
+  "lng":-77.245,
+  "type":"Terrain",
+  "desc":"Major Confederate position west of Gettysburg. Lee observed much of the battle from this ridge."
+},
+{
+  "name":"McPherson Ridge",
+  "lat":39.833,
+  "lng":-77.250,
+  "type":"Terrain",
+  "desc":"Location of intense fighting on July 1 where Buford's cavalry delayed advancing Confederate forces."
+},
+{
+  "name":"Herr Ridge",
+  "lat":39.835,
+  "lng":-77.260,
+  "type":"Terrain",
+  "desc":"Western ridge crossed by Confederate troops approaching Gettysburg during the opening stages of the battle."
+},
+{
+  "name":"Rose Woods",
+  "lat":39.799,
+  "lng":-77.238,
+  "type":"Terrain",
+  "desc":"Wooded area between Devil's Den and the Wheatfield that witnessed fierce close-range combat."
+},
+{
+  "name":"Plum Run",
+  "lat":39.796,
+  "lng":-77.241,
+  "type":"Terrain",
+  "desc":"Small stream in the valley between Devil's Den and the Round Tops, sometimes called the Valley of Death."
+},
+{
+  "name":"Spangler's Spring",
+  "lat":39.825,
+  "lng":-77.219,
+  "type":"Terrain",
+  "desc":"Important water source near Culp's Hill and the site of notable fighting on the Union right flank."
+},
+
+
+
+
+
+
+
   {
     "name": "Joshua Chamberlain",
     "lat": 39.791,

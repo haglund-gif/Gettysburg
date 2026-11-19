@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gettysburg Explorer</title>
+<title>Gettysburg Explorer MASTER VERSION</title>
 
 <link rel="stylesheet"
  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -40,7 +40,7 @@ html,body{
 }
 
 #sidebar{
-    width:320px;
+    width:250px;
     border-left:1px solid #ccc;
     padding:12px;
     overflow:auto;
@@ -183,8 +183,9 @@ Try:
     <small>
     Gettysburg Explorer<br>
     Basemaps ©Sources: Esri, Maxar, Earthstar Geographics, USDA FSA, USGS<br>
-    Historical information compiled from public sources. Major GPS coordinates taken by author.
-    </small>
+    Historical information compiled from public sources. Major GPS coordinates taken by Jon Haglund.
+    copyright 2026 Jon Haglund. All rights reserved.
+</small>
 
 </div>
    
@@ -322,30 +323,24 @@ function addItemToMap(item){
 
 
 
-/* BATTLEFIELD ICONS */
-
-const monumentIcon = L.divIcon({
-    html:"🏛️",
-    className:"",
-    iconSize:[48,48]
+/* BATTLEFIELD ICONS */const monumentIcon = L.divIcon({
+    html:"<span style='font-size:35px'>🏛️</span>",
+    className:""
 });
 
 const commanderIcon = L.divIcon({
-    html:"⭐",
-    className:"",
-    iconSize:[48,48]
+    html:"<span style='font-size:35px'>⭐</span>",
+    className:""
 });
 
 const terrainIcon = L.divIcon({
-    html:"⛰️",
-    className:"",
-    iconSize:[48,48]
+    html:"<span style='font-size:35px'>⛰️</span>",
+    className:""
 });
 
 const battleIcon = L.divIcon({
-    html:"⚔️",
-    className:"",
-    iconSize:[48,48]
+    html:"<span style='font-size:35px'>⚔️</span>",
+    className:""
 });
 
 

@@ -1,0 +1,152 @@
+ {
+    "name": "George Meade",
+    "lat": 39.811,
+    "lng": -77.234,
+    "type": "Commander",
+    "desc": "Commander of the Army of Potomac. This was headquarters of Meade at the Leister house during Gettysburg battle. The house was damaged by the cannon fire."
+  },
+
+  {
+    "name": "Robert E. Lee",
+    "lat": 39.814255,
+    "lng": -77.245,
+    "type": "Commander",
+    "desc": "Commander of the Army of Northern Virginia."
+  },
+
+{
+  "name":"Abraham Lincoln",
+  "lat":39.821,
+  "lng":-77.231,
+  "type":"Commander",
+  "desc":"Sixteenth President of the United States. Lincoln delivered the Gettysburg Address at the cemetery dedication on November 19, 1863."
+},
+
+
+
+
+
+
+{
+  "name":"James Longstreet",
+  "lat":39.808,
+  "lng":-77.258,
+  "type":"Commander",
+  "desc":"Lee's senior corps commander. Longstreet directed major Confederate attacks against the Union left flank on July 2 and expressed reservations about the July 3 assault that became known as Pickett's Charge."
+},
+{
+  "name":"Winfield Scott Hancock",
+  "lat":39.817,
+  "lng":-77.230,
+  "type":"Commander",
+  "desc":"Commander of the Union II Corps. Hancock helped organize Union defenses on Cemetery Ridge and played a critical role in holding the center of the Federal line."
+},
+{
+  "name":"John Reynolds",
+  "lat":39.832,
+  "lng":-77.249,
+  "type":"Commander",
+  "desc":"One of the Union Army's most respected leaders. Reynolds was killed early on July 1 while directing troops north and west of Gettysburg."
+},
+{
+  "name":"John Buford",
+  "lat":39.834,
+  "lng":-77.251,
+  "type":"Commander",
+  "desc":"Union cavalry commander whose troopers delayed Confederate forces on July 1, buying time for Union infantry to reach and defend the high ground south of town."
+},
+{
+  "name":"Richard S. Ewell",
+  "lat":39.841,
+  "lng":-77.238,
+  "type":"Commander",
+  "desc":"Commander of the Confederate Second Corps. Ewell's forces attacked Culp's Hill and Cemetery Hill and have long been associated with debates over the first day's fighting."
+},
+{
+  "name":"J.E.B. Stuart",
+  "lat":39.847,
+  "lng":-77.220,
+  "type":"Commander",
+  "desc":"Commander of Confederate cavalry. Stuart arrived late during the Gettysburg Campaign and fought an important cavalry engagement east of Gettysburg on July 3."
+},
+{
+  "name":"George Pickett",
+  "lat":39.815,
+  "lng":-77.255,
+  "type":"Commander",
+  "desc":"Confederate division commander whose troops formed a major component of the July 3 assault remembered as Pickett's Charge."
+},
+{
+  "name":"Farnsworth's Charge",
+  "lat":39.799,
+  "lng":-77.253,
+  "type":"Battle",
+  "desc":"Union cavalry assault launched late on July 3 against Confederate positions near Big Round Top. The attack suffered heavy losses."
+},
+ 
+ 
+{
+  "name":"A. P. Hill",
+  "lat":39.836,
+  "lng":-77.246,
+  "type":"Commander",
+  "desc":"Commanded the Confederate Third Corps. His troops initiated the fighting west of Gettysburg on July 1 and played major roles throughout the battle."
+},
+{
+  "name":"Oliver O. Howard",
+  "lat":39.821,
+  "lng":-77.229,
+  "type":"Commander",
+  "desc":"Commander of the Union XI Corps. He helped establish the Union defensive position centered on Cemetery Hill."
+},
+{
+  "name":"Daniel Sickles",
+  "lat":39.805,
+  "lng":-77.241,
+  "type":"Commander",
+  "desc":"Union III Corps commander. His controversial advance to the Peach Orchard created a vulnerable salient in the Union line."
+},
+{
+  "name":"Lewis Armistead",
+  "lat":39.813,
+  "lng":-77.236,
+  "type":"Commander",
+  "desc":"Confederate brigadier general who crossed the stone wall during Pickett's Charge before being mortally wounded."
+},
+{
+  "name":"John Gibbon",
+  "lat":39.814,
+  "lng":-77.233,
+  "type":"Commander",
+  "desc":"Union division commander whose troops helped repel Pickett's Charge and hold the center of Cemetery Ridge."
+},
+{
+  "name":"Henry Heth",
+  "lat":39.834,
+  "lng":-77.252,
+  "type":"Commander",
+  "desc":"Confederate division commander whose movement toward Gettysburg on July 1 helped trigger the battle."
+},
+{
+  "name":"Abner Doubleday",
+  "lat":39.832,
+  "lng":-77.247,
+  "type":"Commander",
+  "desc":"Union I Corps commander after Reynolds' death. Directed forces resisting Confederate attacks on the first day."
+},
+
+
+
+
+
+
+
+  {
+    "name": "Joshua Chamberlain",
+    "lat": 39.791,
+    "lng": -77.236,
+    "type": "Commander",
+    "desc": "Commander of the 20th Maine."
+  },
+
+

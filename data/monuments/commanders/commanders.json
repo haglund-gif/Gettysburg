@@ -1,0 +1,380 @@
+[
+  {
+    "name": "General Francis Barlow Monument",
+    "lat": 39.84545,
+    "lng": -77.22642,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Buford Monument",
+    "lat": 39.83795,
+    "lng": -77.25164,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Samuel Crawford Monument",
+    "lat": 39.795737,
+    "lng": -77.23881,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Abner Doubleday Monument",
+    "lat": 39.83303,
+    "lng": -77.25075,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. Abner Doubleday's Headquarters Marker",
+    "lat": 39.83558,
+    "lng": -77.249578,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Geary Monument",
+    "lat": 39.794847,
+    "lng": -77.245179,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Geary Monument",
+    "lat": 39.817226,
+    "lng": -77.219926,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Gibbon Monument",
+    "lat": 39.81102,
+    "lng": -77.2354,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General George Greene Monument",
+    "lat": 39.819865,
+    "lng": -77.220127,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. Winfield S. Hancock's Headquarters Marker",
+    "lat": 39.808258,
+    "lng": -77.23489,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Winfield Scott Hancock Equestrian Statue",
+    "lat": 39.82132,
+    "lng": -77.228877,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Hancock Wounded Marker",
+    "lat": 39.808769,
+    "lng": -77.237076,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Alexander Hays Monument",
+    "lat": 39.816829,
+    "lng": -77.234547,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Oliver Howard Equestrian Statue",
+    "lat": 39.821948,
+    "lng": -77.228877,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. Oliver O. Howard's Headquarters Marker",
+    "lat": 39.82151,
+    "lng": -77.228713,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Albion Howe's Headquarters Marker",
+    "lat": 39.784027,
+    "lng": -77.229928,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Andrew Humphreys Monument",
+    "lat": 39.8082,
+    "lng": -77.243889,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. Henry J. Hunt's Headquarters Marker",
+    "lat": 39.813617,
+    "lng": -77.231783,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General George Meade Equestrian Statue",
+    "lat": 39.813881,
+    "lng": -77.23481,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. George Meade's Headquarters Marker",
+    "lat": 39.814472,
+    "lng": -77.232111,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. John Newton's Headquarters Marker",
+    "lat": 39.807784,
+    "lng": -77.231656,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Reynolds Equestrian Statue",
+    "lat": 39.837899,
+    "lng": -77.251284,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Reynolds Statue",
+    "lat": 39.8213,
+    "lng": -77.23033,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Reynolds Killed Marker",
+    "lat": 39.834392,
+    "lng": -77.250954,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Robinson Monument",
+    "lat": 39.843464,
+    "lng": -77.241886,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General John Sedgwick Equestrian Statue",
+    "lat": 39.796224,
+    "lng": -77.233863,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. John Sedgwick's Headquarters Marker",
+    "lat": 39.7972,
+    "lng": -77.234483,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. Daniel E. Sickles's Headquarters Marker",
+    "lat": 39.802544,
+    "lng": -77.242773,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Daniel E. Sickles Wounded Marker",
+    "lat": 39.802544,
+    "lng": -77.242773,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Henry Slocum Equestrian Statue",
+    "lat": 39.819128,
+    "lng": -77.224588,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Mjr-Gen. Henry Slocum's Headquarters Marker",
+    "lat": 39.807983,
+    "lng": -77.217833,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. George Sykes's Headquarters Marker",
+    "lat": 39.7972,
+    "lng": -77.234483,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Strong Vincent Marker",
+    "lat": 39.7906598,
+    "lng": -77.236921,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General James Wadsworth Monument",
+    "lat": 39.83829,
+    "lng": -77.24769,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General G. K. Warren Monument",
+    "lat": 39.792516,
+    "lng": -77.236683,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Alexander Webb Monument",
+    "lat": 39.81296,
+    "lng": -77.23537,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General William Wells Monument",
+    "lat": 39.78504,
+    "lng": -77.245761,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Samuel Zook Monument",
+    "lat": 39.798416,
+    "lng": -77.242559,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "5th Army Corps Headquarters Marker",
+    "lat": 39.79827,
+    "lng": -77.2347,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "3rd Maine Infantry Marker (Hancock Avenue)",
+    "lat": 39.81249,
+    "lng": -77.23529,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "12th Massachusetts Infantry Marker (Hancock Avenue)",
+    "lat": 39.806708,
+    "lng": -77.235107,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "99th Pennsylvania Infantry Monument (Hancock Avenue)",
+    "lat": 39.813502,
+    "lng": -77.235172,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "121st Pennsylvania Infantry Monument (Reynolds Avenue)",
+    "lat": 39.830439,
+    "lng": -77.251625,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "121st Pennsylvania Infantry Monument (Hancock Avenue)",
+    "lat": 39.8109,
+    "lng": -77.23544,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "149th Pennsylvania Infantry Monument (Hancock Avenue)",
+    "lat": 39.810125,
+    "lng": -77.23577,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "150th Pennsylvania Infantry Monument (Hancock Avenue)",
+    "lat": 39.810648,
+    "lng": -77.235518,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Charles Collis Memorial",
+    "lat": 39.81994,
+    "lng": -77.23197,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "General Lewis Armistead Marker",
+    "lat": 39.81319,
+    "lng": -77.23583,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Lt-Gen. Richard Ewell's Headquarters Marker",
+    "lat": 39.831117,
+    "lng": -77.219617,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Lt-Gen. Ambrose Hill's Headquarters Marker",
+    "lat": 39.817933,
+    "lng": -77.248133,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Gen. Robert E. Lee's Headquarters Marker",
+    "lat": 39.834833,
+    "lng": -77.2454,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Lt-Gen. James Longstreet Equestrian Statue",
+    "lat": 39.805726,
+    "lng": -77.256549,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Lt-Gen. James Longstreet's Headquarters Marker",
+    "lat": 39.800033,
+    "lng": -77.2564,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  },
+  {
+    "name": "Lee's Brigade Tablet",
+    "lat": 39.838367,
+    "lng": -77.167,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Commander"
+  }
+]

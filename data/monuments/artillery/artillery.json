@@ -1,0 +1,464 @@
+[
+  {
+    "name": "Battery A, 4th U. S. Artillery Monument",
+    "lat": 39.813171,
+    "lng": -77.235814,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery B, 4th U. S. Artillery Monument",
+    "lat": 39.835689,
+    "lng": -77.245881,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery C, 5th U. S. Artillery Monument",
+    "lat": 39.81005,
+    "lng": -77.23598,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery D, 5th U. S. Artillery Monument",
+    "lat": 39.792059,
+    "lng": -77.236599,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery E, 4th U. S. Artillery Monument",
+    "lat": 39.783092,
+    "lng": -77.246444,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Batteries E & G, 1st United States Artillery Monument, Chester's section",
+    "lat": 39.821417,
+    "lng": -77.164733,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Batteries E & G, 1st United States Artillery Monument, Kinney's section",
+    "lat": 39.819033,
+    "lng": -77.168567,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery K, 5th U. S. Artillery Monument (Culp's Hill)",
+    "lat": 39.820074,
+    "lng": -77.220294,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery K, 5th U. S. Artillery Monument (Baltimore Pike)",
+    "lat": 39.81299,
+    "lng": -77.22369,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery M, 2nd United States Artillery",
+    "lat": 39.818333,
+    "lng": -77.169283,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "2nd Connecticut Light Artillery Monument",
+    "lat": 39.80375,
+    "lng": -77.2346,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "2nd Maine Battery Monument",
+    "lat": 39.837848,
+    "lng": -77.251547,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "2nd Maine Battery Marker",
+    "lat": 39.81755,
+    "lng": -77.23155,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "5th Maine Battery Monument",
+    "lat": 39.81935,
+    "lng": -77.224564,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Stevens Battery Marker",
+    "lat": 39.833741,
+    "lng": -77.244946,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "6th Maine Artillery Battery Monument",
+    "lat": 39.803292,
+    "lng": -77.234534,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery A, Maryland Artillery Monument",
+    "lat": 39.806067,
+    "lng": -77.219433,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "1st Massachusetts Light Artillery Battery Monument",
+    "lat": 39.817729,
+    "lng": -77.231599,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "3rd Massachusetts Artillery Battery Monument",
+    "lat": 39.79673,
+    "lng": -77.238083,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "5th Massachusetts Artillery Battery Monument",
+    "lat": 39.8006,
+    "lng": -77.2469,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "9th Massachusetts Artillery Battery Monument (Trostle Farm)",
+    "lat": 39.80165,
+    "lng": -77.24248,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "9th Massachusetts Artillery Battery Monument (Ziegler's Grove)",
+    "lat": 39.81599,
+    "lng": -77.23487,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "9th Massachusetts Artillery Battery Monument (Wheatfield)",
+    "lat": 39.788493,
+    "lng": -77.237819,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "9th Michigan Battery Monument",
+    "lat": 39.80785,
+    "lng": -77.235985,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "16th Michigan Battery Monument",
+    "lat": 39.791,
+    "lng": -77.23745,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "1st New Hampshire Battery Monument",
+    "lat": 39.818048,
+    "lng": -77.232173,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery A, 1st New Jersey Artillery Monument",
+    "lat": 39.807481,
+    "lng": -77.235464,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery B, 1st New Jersey Artillery Monument",
+    "lat": 39.801336,
+    "lng": -77.247218,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery B, 1st New York Light Artillery Monument",
+    "lat": 39.810629,
+    "lng": -77.235778,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery C, 1st New York Light Artillery Monument",
+    "lat": 39.796005,
+    "lng": -77.234724,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery D, 1st New York Light Artillery Monument",
+    "lat": 39.797429,
+    "lng": -77.24283,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery E, 1st New York Light Artillery Monument",
+    "lat": 39.820611,
+    "lng": -77.228324,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery D, 1st New York Light Artillery Monument",
+    "lat": 39.801301,
+    "lng": -77.250123,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery I, 1st New York Light Artillery Monument",
+    "lat": 39.821963,
+    "lng": -77.229075,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery K, 1st New York Light Artillery Monument",
+    "lat": 39.813613,
+    "lng": -77.235266,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery L, 1st New York Light Artillery Monument",
+    "lat": 39.831424,
+    "lng": -77.251284,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery M, 1st New York Light Artillery Monument",
+    "lat": 39.80636,
+    "lng": -77.22049,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "1st New York Independent Battery Artillery Monument",
+    "lat": 39.812348,
+    "lng": -77.235625,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "3rd New York Independent Battery Artillery Monument",
+    "lat": 39.816728,
+    "lng": -77.232224,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "4th New York Independent Battery Artillery Monument",
+    "lat": 39.792007,
+    "lng": -77.24251,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "5th New York Independent Battery Artillery Monument",
+    "lat": 39.821017,
+    "lng": -77.229842,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "6th New York Independent Battery Artillery Monument",
+    "lat": 39.815551,
+    "lng": -77.232205,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "10th New York Independent Battery Artillery Monument",
+    "lat": 39.80064,
+    "lng": -77.247102,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "11th New York Independent Battery Artillery Monument",
+    "lat": 39.813743,
+    "lng": -77.235252,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "13th New York Independent Battery Artillery Monument",
+    "lat": 39.84255,
+    "lng": -77.23295,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "15th New York Independent Battery Artillery Monument",
+    "lat": 39.801058,
+    "lng": -77.248178,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery H, 1st Ohio Artillery Monument",
+    "lat": 39.81825,
+    "lng": -77.2315,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery I, 1st Ohio Artillery Monument",
+    "lat": 39.841919,
+    "lng": -77.233868,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery K, 1st Ohio Artillery Monument",
+    "lat": 39.83686,
+    "lng": -77.2313,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery L, 1st Ohio Artillery Monument",
+    "lat": 39.793588,
+    "lng": -77.236384,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery B, 1st Pennsylvania Artillery Monument",
+    "lat": 39.82138,
+    "lng": -77.228668,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery C, 1st Pennsylvania Light Artillery Monument",
+    "lat": 39.801431,
+    "lng": -77.249693,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery C & F, 1st Pennsylvania Artillery Marker",
+    "lat": 39.801341,
+    "lng": -77.249433,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery E, 1st Pennsylvania Artillery Monument (Culp's Hill)",
+    "lat": 39.820018,
+    "lng": -77.220036,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery E, 1st Pennsylvania Artillery Monument (Powers' Hill)",
+    "lat": 39.80606,
+    "lng": -77.22015,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery F, 1st Pennsylvania Artillery Monument",
+    "lat": 39.801341,
+    "lng": -77.249433,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery F & G, 1st Pennsylvania Artillery Monument",
+    "lat": 39.821617,
+    "lng": -77.228724,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery H, 3rd Pennsylvania Heavy Artillery Monument",
+    "lat": 39.818835,
+    "lng": -77.17299,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery A, 1st Rhode Island Artillery Monument",
+    "lat": 39.813551,
+    "lng": -77.235456,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery B, 1st Rhode Island Artillery Monument",
+    "lat": 39.812315,
+    "lng": -77.235411,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery E, 1st Rhode Island Artillery Monument",
+    "lat": 39.80235,
+    "lng": -77.2494,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Battery C, 1st West Virginia Artillery Monument",
+    "lat": 39.81878,
+    "lng": -77.231575,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "3rd West Virginia Artillery Monument",
+    "lat": 39.84359,
+    "lng": -77.247926,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Breathed's Battery Tablet",
+    "lat": 39.837017,
+    "lng": -77.168217,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Jackson's Battery Tablet",
+    "lat": 39.834383,
+    "lng": -77.170533,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  },
+  {
+    "name": "Green's Battery",
+    "lat": 39.837917,
+    "lng": -77.1674,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Artillery"
+  }
+]

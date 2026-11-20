@@ -110,7 +110,7 @@ July 3
 Retreat
 </button>
 
-
+const monumentLayer = L.layerGroup().addTo(map);
 
 
 
@@ -210,7 +210,7 @@ const osm = L.tileLayer(
     attribution:'Tiles © Esri'
 }).addTo(map);
 //=================================================
-// ELEVATION OVERLAY (SIMPLE DEMO)
+// ELEVATION OVERLAY (SIMPLE DEMO but works)
 //=================================================
 
 const elevationLayer = L.layerGroup();
@@ -362,7 +362,7 @@ L.control.layers(
 ).addTo(map);
 
 //=================================================
-// SEARCH
+// SEARCH   code above is labels for small box quotes are labels
 //=================================================
 
 function doSearch() {
@@ -514,31 +514,63 @@ fetch('data/terrain.json')
 });
 
 
+ 
+
+
+
 /* MONUMENTS */
 
-fetch('data/monuments.json')
+const monumentFiles = [
+    'data/monuments/infantry/infantry.json',
+    'data/monuments/cavalry/cavalry.json',
+    'data/monuments/artillery/artillery.json',
+    'data/monuments/engineers/engineers.json',
+    'data/monuments/memorials/memorials.json'
+];
 
-.then(response => response.json())
+monumentFiles.forEach(file => {
 
-.then(data => {
+    fetch(file)
+    .then(response => response.json())
+    .then(data => {
 
-    data.forEach(item => {
+        console.log("Loaded", file, data.length);
 
-        addItemToMap(item);
+        data.forEach(item => {
+
+         
+         
+         
+         
+         
+            L.circleMarker(
+                [item.lat, item.lng],
+                {
+                    radius: 5,
+                    color: "gray",
+                    fillColor: "gray",
+                    fillOpacity: 0.7
+                }
+            )
+            .addTo(monuments)
+            .bindPopup(
+                `<b>${item.name}</b><br>${item.type}`
+            );
+
+        });
+
+    })
+    .catch(error => {
+
+        console.error(
+            "Monuments load failed:",
+            file,
+            error
+        );
 
     });
 
-})
-
-.catch(error => {
-
-    console.error(
-        "Monuments load failed",
-        error
-    );
-
 });
-
 
 /* START TIMELINE */
 

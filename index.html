@@ -179,9 +179,9 @@ h2{
 <div id="toolbar">
     <strong>Gettysburg Explorer</strong>
 
-<button>TEST BUTTON</button>
 
 
+    
 
     <input id="searchBox"
            placeholder="Search monument, person, place">
@@ -211,6 +211,13 @@ Retreat
 
 
 
+
+
+
+
+<<button onclick="locateMe()">
+📍 Locate Me
+</button>
 
 
 </div>
@@ -301,6 +308,9 @@ Try:
 //=================================================
 
 const map = L.map('map').setView([39.830,-77.231],13);
+
+let userMarker = null;
+
 
 const osm = L.tileLayer(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
@@ -672,24 +682,56 @@ monumentFiles.forEach(file => {
 
 /* START TIMELINE */
 
+
+
 loadPeriod('prebattle');
+
+function locateMe(){
+
+    navigator.geolocation.getCurrentPosition(
+
+        function(position){
+
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+
+            userMarker = L.circleMarker(
+                [lat,lng],
+                {
+                    radius:10,
+                    color:"#ffffff",
+                    weight:3,
+                    fillColor:"#0078ff",
+                    fillOpacity:1
+                }
+            ).addTo(map);
+
+
+            userMarker.bindPopup("📍 You Are Here").openPopup();
+
+            map.setView([lat,lng],16);
+
+            document.getElementById("info").innerHTML =
+                "<h3>Your Location</h3>" +
+                "Latitude: " + lat.toFixed(6) + "<br>" +
+                "Longitude: " + lng.toFixed(6);
+
+        },
+
+        function(error){
+
+            alert("GPS failed");
+
+        },
+
+        {
+            enableHighAccuracy:true
+        }
+    );
+}
+
 </script>
-
-<script>
-document.getElementById("menuBtn").onclick = function(){
-
-    document
-        .getElementById("sidebar")
-        .classList.toggle("open");
-
-};
-</script>
-
-
-
 
 </body>
-
-
 
 </html>

@@ -20,6 +20,15 @@ html,body{
     font-family:Arial,Helvetica,sans-serif;
 }
 
+
+.activePeriod{
+    background:#0078ff;
+    color:white;
+    font-weight:bold;
+}
+
+
+
 #toolbar{
     height:50px;
     background:#1c2c44;
@@ -189,23 +198,28 @@ h2{
     <button onclick="doSearch()">Search</button>
 
 
-<button onclick="loadPeriod('prebattle')">
+<button id="btn-prebattle"
+        onclick="loadPeriod('prebattle')">
 Pre-Battle
 </button>
 
-<button onclick="loadPeriod('july1')">
+<button id="btn-july1"
+        onclick="loadPeriod('july1')">
 July 1
 </button>
 
-<button onclick="loadPeriod('july2')">
+<button id="btn-july2"
+        onclick="loadPeriod('july2')">
 July 2
 </button>
 
-<button onclick="loadPeriod('july3')">
+<button id="btn-july3"
+        onclick="loadPeriod('july3')">
 July 3
 </button>
 
-<button onclick="loadPeriod('retreat')">
+<button id="btn-retreat"
+        onclick="loadPeriod('retreat')">
 Retreat
 </button>
 
@@ -516,6 +530,18 @@ function doSearch() {
 
 
 function loadPeriod(period){
+
+document
+    .querySelectorAll('[id^="btn-"]')
+    .forEach(btn => btn.classList.remove('activePeriod'));
+
+const activeBtn =
+    document.getElementById("btn-" + period);
+
+if(activeBtn){
+    activeBtn.classList.add("activePeriod");
+}
+
 
     timelineLayer.clearLayers();
 

@@ -8,6 +8,11 @@
 <link rel="stylesheet"
  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
+
+
+
+
+ 
 <style>
 html,body{
     margin:0;
@@ -47,6 +52,44 @@ html,body{
     background:#fafafa;
 }
 
+/* Mobile flyout */
+@media (max-width: 768px){
+
+    #sidebar{
+        position:absolute;
+        top:0;
+        left:-280px;
+        width:250px;
+        height:100%;
+        z-index:2000;
+        background:#fafafa;
+        transition:left 0.3s ease;
+        box-shadow:2px 0 10px rgba(0,0,0,.3);
+    }
+
+    #sidebar.open{
+        left:0;
+    }
+
+    #menuBtn{
+        position:absolute;
+        top:10px;
+        left:10px;
+        z-index:3000;
+
+        width:44px;
+        height:44px;
+
+        border:none;
+        border-radius:6px;
+        background:white;
+        font-size:24px;
+        cursor:pointer;
+
+        box-shadow:0 2px 6px rgba(0,0,0,.25);
+    }
+}
+
 h2{
     margin-top:0;
 }
@@ -73,6 +116,55 @@ h2{
     border:none;
     font-size:42px;
 }
+
+
+#menuBtn{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    #menuBtn{
+        display:block;
+        position:absolute;
+        top:10px;
+        left:10px;
+        z-index:9999;
+
+        width:44px;
+        height:44px;
+
+        border:none;
+        border-radius:6px;
+
+        background:white;
+        font-size:24px;
+
+        box-shadow:0 2px 6px rgba(0,0,0,.3);
+    }
+
+    #sidebar{
+        position:absolute;
+        top:0;
+        left:-280px;
+
+        width:250px;
+        height:100%;
+
+        z-index:2000;
+
+        background:#fafafa;
+
+        transition:left .3s ease;
+    }
+
+    #sidebar.open{
+        left:0;
+    }
+}
+
+
+
 </style>
 
 
@@ -81,8 +173,15 @@ h2{
 
 <body>
 
+<button id="menuBtn">☰</button>
+
+
 <div id="toolbar">
     <strong>Gettysburg Explorer</strong>
+
+<button>TEST BUTTON</button>
+
+
 
     <input id="searchBox"
            placeholder="Search monument, person, place">
@@ -110,7 +209,6 @@ July 3
 Retreat
 </button>
 
-const monumentLayer = L.layerGroup().addTo(map);
 
 
 
@@ -577,5 +675,21 @@ monumentFiles.forEach(file => {
 loadPeriod('prebattle');
 </script>
 
+<script>
+document.getElementById("menuBtn").onclick = function(){
+
+    document
+        .getElementById("sidebar")
+        .classList.toggle("open");
+
+};
+</script>
+
+
+
+
 </body>
+
+
+
 </html>

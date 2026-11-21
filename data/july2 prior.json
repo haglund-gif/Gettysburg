@@ -55,4 +55,61 @@
     "type":"Battle",
     "desc":"Union troops defended Little Round Top against repeated Confederate assaults, preserving the Union left flank."
   }
+[
+  {
+    "name":"George G. Meade",
+    "lat":39.820,
+    "lng":-77.230,
+    "type":"Commander",
+    "desc":"Commander of the Army of the Potomac. Meade directed the defense of the Union fishhook line and coordinated reinforcements across the battlefield."
+  },
+  {
+    "name":"James Longstreet",
+    "lat":39.805,
+    "lng":-77.260,
+    "type":"Commander",
+    "desc":"Lee's senior corps commander. Longstreet directed Confederate attacks against the Union left flank on July 2."
+  },
+  {
+    "name":"Winfield Scott Hancock",
+    "lat":39.815,
+    "lng":-77.232,
+    "type":"Commander",
+    "desc":"Commander of Union II Corps. Hancock reinforced threatened sectors and helped stabilize the Union line."
+  },
+  {
+    "name":"Daniel Sickles",
+    "lat":39.805,
+    "lng":-77.241,
+    "type":"Commander",
+    "desc":"Commander of Union III Corps. His advance to the Peach Orchard created a dangerous salient that became a focal point of Confederate attacks."
+  },
+  {
+    "name":"Joshua Chamberlain",
+    "lat":39.791,
+    "lng":-77.236,
+    "type":"Commander",
+    "desc":"Colonel of the 20th Maine. Chamberlain's defense of Little Round Top became one of the most famous actions of the battle."
+  },
+  {
+    "name":"Devil's Den Fight",
+    "lat":39.795,
+    "lng":-77.241,
+    "type":"Battle",
+    "desc":"Intense fighting erupted among the massive boulders of Devil's Den as Confederate forces pushed against the Union left flank."
+  },
+  {
+    "name":"Wheatfield Fight",
+    "lat":39.798,
+    "lng":-77.244,
+    "type":"Battle",
+    "desc":"The Wheatfield changed hands repeatedly as both sides launched attacks and counterattacks throughout the afternoon."
+  },
+  {
+    "name":"Little Round Top Defense",
+    "lat":39.791,
+    "lng":-77.236,
+    "type":"Battle",
+    "desc":"Union troops defended Little Round Top against repeated Confederate assaults, preserving the Union left flank."
+  }
 ]

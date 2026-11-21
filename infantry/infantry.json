@@ -1,0 +1,2109 @@
+[
+  {
+    "name": "New York State Auxiliary Monument",
+    "lat": 39.8043,
+    "lng": -77.23445,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Monument to United States Regulars",
+    "lat": 39.811217,
+    "lng": -77.235683,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "U.S. Signal Corps Marker",
+    "lat": 39.79254,
+    "lng": -77.236503,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Stannard Vermont Brigade Monument",
+    "lat": 39.80945,
+    "lng": -77.23636,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "John Burns Monument",
+    "lat": 39.83595,
+    "lng": -77.25273,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Jed. Chapman Marker",
+    "lat": 39.796167,
+    "lng": -77.245483,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Father William Corby Monument",
+    "lat": 39.80345,
+    "lng": -77.23438,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Alonzo Cushing Marker",
+    "lat": 39.81315,
+    "lng": -77.235733,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "124th New York Infantry Monument",
+    "lat": 39.792376,
+    "lng": -77.242274,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Chaplain Horatio S. Howell Monument",
+    "lat": 39.830824,
+    "lng": -77.232592,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Sergeant Amos Humiston Marker",
+    "lat": 39.83205,
+    "lng": -77.228715,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Henry Merwin Marker",
+    "lat": 39.797567,
+    "lng": -77.2409,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "140th New York Infantry Monument",
+    "lat": 39.791284,
+    "lng": -77.237089,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Maj. Joshua G. Palmer Marker",
+    "lat": 39.8201,
+    "lng": -77.21945,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Stannard Vermont Brigade Monument",
+    "lat": 39.80945,
+    "lng": -77.23636,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Colonel Charles F. Taylor Marker",
+    "lat": 39.795601,
+    "lng": -77.241234,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "83rd Pennsylvania Infantry Monument",
+    "lat": 39.789957,
+    "lng": -77.236969,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Col. Strong Vincent Fell Here Marker",
+    "lat": 39.791283,
+    "lng": -77.237017,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Wadsworth's Division Tablet",
+    "lat": 39.836833,
+    "lng": -77.248717,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Colonel George Hull Ward Marker",
+    "lat": 39.812239,
+    "lng": -77.238737,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Weed and Hazlett Monument",
+    "lat": 39.792121,
+    "lng": -77.236583,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Colonel George L. Willard Marker",
+    "lat": 39.80635,
+    "lng": -77.238975,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Custer's Brigade Tablet",
+    "lat": 39.826633,
+    "lng": -77.16515,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Gregg's Brigade Tablet",
+    "lat": 39.818133,
+    "lng": -77.169433,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "McIntosh's Brigade Tablet",
+    "lat": 39.8259,
+    "lng": -77.163067,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Neill's Brigade Tablet",
+    "lat": 39.808017,
+    "lng": -77.209733,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Tidball's Brigade Tablet",
+    "lat": 39.820233,
+    "lng": -77.166667,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th Connecticut Infantry Monument",
+    "lat": 39.815562,
+    "lng": -77.217394,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "14th Connecticut Infantry Monument",
+    "lat": 39.81384,
+    "lng": -77.23543,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "14th Connecticut Infantry Marker",
+    "lat": 39.8164,
+    "lng": -77.24205,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "17th Connecticut Infantry Monument (Barlow's Knoll)",
+    "lat": 39.84544,
+    "lng": -77.2262,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "17th Connecticut Infantry Monument (Cemetery Hill)",
+    "lat": 39.822632,
+    "lng": -77.228115,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "20th Connecticut Infantry Monument",
+    "lat": 39.81595,
+    "lng": -77.21786,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "27th Connecticut Infantry Monument",
+    "lat": 39.797069,
+    "lng": -77.241558,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "27th Connecticut Infantry Monument (Brooke Avenue)",
+    "lat": 39.79535,
+    "lng": -77.247073,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Delaware Infantry Monument",
+    "lat": 39.8146,
+    "lng": -77.235455,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "2nd Delaware Infantry Monument",
+    "lat": 39.79485,
+    "lng": -77.2468,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "First Shot Marker",
+    "lat": 39.850964,
+    "lng": -77.280727,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "82nd Illinois Infantry Monument",
+    "lat": 39.84283,
+    "lng": -77.23235,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th Indiana Infantry Monument",
+    "lat": 39.820294,
+    "lng": -77.22049,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "14th Indiana Infantry Monument",
+    "lat": 39.821462,
+    "lng": -77.228906,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "19th Indiana Infantry Monument",
+    "lat": 39.834178,
+    "lng": -77.254237,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "20th Indiana Infantry Monument",
+    "lat": 39.79486,
+    "lng": -77.242765,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "27th Indiana Infantry Marker",
+    "lat": 39.814267,
+    "lng": -77.216017,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "27th Indiana Infantry Monument",
+    "lat": 39.81353,
+    "lng": -77.215957,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "3rd Maine Infantry Monument",
+    "lat": 39.800411,
+    "lng": -77.250067,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "3rd Maine Infantry Marker (Berdan Avenue)",
+    "lat": 39.808004,
+    "lng": -77.257255,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "4th Maine Infantry Monument",
+    "lat": 39.791882,
+    "lng": -77.241421,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "4th Maine Infantry Marker",
+    "lat": 39.812491,
+    "lng": -77.23529,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th Maine Infantry Monument",
+    "lat": 39.795311,
+    "lng": -77.235006,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "6th Maine Infantry Monument",
+    "lat": 39.783435,
+    "lng": -77.228407,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th Maine Infantry Monument",
+    "lat": 39.807889,
+    "lng": -77.210646,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "10th Maine Infantry Monument",
+    "lat": 39.811509,
+    "lng": -77.220723,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "16th Maine Infantry Monument",
+    "lat": 39.841588,
+    "lng": -77.242832,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "16th Maine Infantry Marker",
+    "lat": 39.844555,
+    "lng": -77.241985,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "17th Maine Infantry Monument",
+    "lat": 39.795746,
+    "lng": -77.244412,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "17th Maine Infantry Marker",
+    "lat": 39.807961,
+    "lng": -77.236087,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "19th Maine Infantry Monument",
+    "lat": 39.81106,
+    "lng": -77.23612,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "20th Maine Infantry Monument (Little Round Top)",
+    "lat": 39.789476,
+    "lng": -77.236146,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "20th Maine Infantry Monument (Big Round Top)",
+    "lat": 39.786642,
+    "lng": -77.239544,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Maryland Volunteer Infantry, Eastern Shore Brigade Monument",
+    "lat": 39.81917,
+    "lng": -77.2197,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Maryland Volunteer Infantry, Potomac Home Brigade Monument",
+    "lat": 39.814727,
+    "lng": -77.216718,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "3rd Maryland Volunteer Infantry Monument",
+    "lat": 39.815867,
+    "lng": -77.217838,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Massachusetts Infantry Monument",
+    "lat": 39.808728,
+    "lng": -77.243707,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Massachusetts Infantry Marker",
+    "lat": 39.809535,
+    "lng": -77.245796,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "2nd Massachusetts Infantry Monument",
+    "lat": 39.813324,
+    "lng": -77.215871,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th Massachusetts Infantry Monument",
+    "lat": 39.795929,
+    "lng": -77.234121,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "9th Massachusetts Infantry Monument",
+    "lat": 39.788493,
+    "lng": -77.237819,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "10th Massachusetts Infantry Monument",
+    "lat": 39.79637,
+    "lng": -77.23419,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "11th Massachusetts Infantry Monument",
+    "lat": 39.80807,
+    "lng": -77.244031,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "12th Massachusetts Infantry Monument",
+    "lat": 39.843697,
+    "lng": -77.242068,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "12th Massachusetts Infantry Marker (Ziegler's Grove)",
+    "lat": 39.817187,
+    "lng": -77.233412,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "13th Massachusetts Infantry Monument",
+    "lat": 39.84259,
+    "lng": -77.24129,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "15th Massachusetts Infantry Monument",
+    "lat": 39.810739,
+    "lng": -77.2361,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "16th Massachusetts Infantry Monument",
+    "lat": 39.80705,
+    "lng": -77.24534,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "18th Massachusetts Infantry Monument",
+    "lat": 39.79736,
+    "lng": -77.24591,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "19th Massachusetts Infantry Monument",
+    "lat": 39.811503,
+    "lng": -77.235416,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "20th Massachusetts Infantry Monument",
+    "lat": 39.811449,
+    "lng": -77.236159,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "22nd Massachusetts Infantry Monument",
+    "lat": 39.797116,
+    "lng": -77.24641,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "28th Massachusetts Infantry Monument",
+    "lat": 39.797405,
+    "lng": -77.245657,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "32nd Massachusetts Infantry Monument",
+    "lat": 39.79698,
+    "lng": -77.245965,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "33rd Massachusetts Infantry Monument",
+    "lat": 39.819861,
+    "lng": -77.226149,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "37th Massachusetts Infantry Monument",
+    "lat": 39.79812,
+    "lng": -77.234539,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Michigan Infantry Monument",
+    "lat": 39.79737,
+    "lng": -77.24655,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "3rd Michigan Infantry Monument",
+    "lat": 39.80018,
+    "lng": -77.24927,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "4th Michigan Infantry Monument",
+    "lat": 39.79619,
+    "lng": -77.243905,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th Michigan Infantry Monument",
+    "lat": 39.79719,
+    "lng": -77.244959,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th Michigan Infantry Monument",
+    "lat": 39.8118,
+    "lng": -77.23619,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "24th Michigan Infantry Monument",
+    "lat": 39.83491,
+    "lng": -77.25441,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "24th Michigan Infantry Marker",
+    "lat": 39.83491,
+    "lng": -77.25441,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Minnesota Volunteer Infantry Monument",
+    "lat": 39.806631,
+    "lng": -77.235021,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Minnesota Volunteer Infantry Monument (obelisk)",
+    "lat": 39.810483,
+    "lng": -77.236083,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "2nd New Hampshire Volunteer Infantry Monument",
+    "lat": 39.800523,
+    "lng": -77.250334,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th New Hampshire Volunteer Infantry Monument",
+    "lat": 39.795024,
+    "lng": -77.24188,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "12th New Hampshire Volunteer Infantry Monument",
+    "lat": 39.806506,
+    "lng": -77.245989,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st New Jersey Infantry Brigade Monument",
+    "lat": 39.800613,
+    "lng": -77.233394,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "4th New Jersey Infantry Monument",
+    "lat": 39.804767,
+    "lng": -77.218,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th New Jersey Infantry Monument",
+    "lat": 39.80746,
+    "lng": -77.245155,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "6th New Jersey Infantry Monument",
+    "lat": 39.792509,
+    "lng": -77.240922,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th New Jersey Infantry Monument",
+    "lat": 39.801487,
+    "lng": -77.246743,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "8th New Jersey Infantry Monument",
+    "lat": 39.79599,
+    "lng": -77.245585,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "11th New Jersey Infantry Monument",
+    "lat": 39.805905,
+    "lng": -77.246644,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "12th New Jersey Infantry Monument",
+    "lat": 39.81515,
+    "lng": -77.23545,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "12th New Jersey Infantry Marker",
+    "lat": 39.816567,
+    "lng": -77.241967,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "13th New Jersey Infantry Monument",
+    "lat": 39.812989,
+    "lng": -77.214704,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "10th New York Infantry Monument",
+    "lat": 39.81428,
+    "lng": -77.23442,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "12th & 44th New York Infantry Monument",
+    "lat": 39.791224,
+    "lng": -77.237015,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "39th New York Infantry Monument",
+    "lat": 39.814179,
+    "lng": -77.23525,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "40th New York Infantry Monument",
+    "lat": 39.79238,
+    "lng": -77.240437,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "41st New York Infantry Monument",
+    "lat": 39.821351,
+    "lng": -77.227206,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "42nd New York Infantry Monument",
+    "lat": 39.812016,
+    "lng": -77.235411,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "43rd New York Infantry Monument",
+    "lat": 39.80798,
+    "lng": -77.210061,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "45th New York Infantry Monument",
+    "lat": 39.840527,
+    "lng": -77.235692,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "49th New York Infantry Monument",
+    "lat": 39.807784,
+    "lng": -77.211268,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "52nd New York Infantry Monument",
+    "lat": 39.797411,
+    "lng": -77.245662,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "54th New York Infantry Monument",
+    "lat": 39.822175,
+    "lng": -77.227817,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "57th New York Infantry Monument",
+    "lat": 39.7969,
+    "lng": -77.24449,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "58th New York Infantry Monument",
+    "lat": 39.84373,
+    "lng": -77.228067,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "59th New York Infantry Monument",
+    "lat": 39.812059,
+    "lng": -77.236242,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "60th New York Infantry Monument",
+    "lat": 39.819655,
+    "lng": -77.220079,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "61st New York Infantry Monument",
+    "lat": 39.796988,
+    "lng": -77.241953,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "62nd New York Infantry Monument",
+    "lat": 39.797196,
+    "lng": -77.237398,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "64th New York Infantry Monument",
+    "lat": 39.79499,
+    "lng": -77.24698,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "65th New York Infantry Monument",
+    "lat": 39.818059,
+    "lng": -77.21961,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "66th New York Infantry Monument",
+    "lat": 39.79727,
+    "lng": -77.24505,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "67th New York Infantry Monument",
+    "lat": 39.817711,
+    "lng": -77.219725,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "68th New York Infantry Monument",
+    "lat": 39.821928,
+    "lng": -77.22763,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "73rd New York Infantry Monument",
+    "lat": 39.802113,
+    "lng": -77.248159,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "76th New York Infantry Monument",
+    "lat": 39.839928,
+    "lng": -77.246713,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "77th New York Infantry Monument",
+    "lat": 39.805204,
+    "lng": -77.219553,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "78th & 102nd New York Infantry Monument",
+    "lat": 39.818516,
+    "lng": -77.219489,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "80th New York Infantry Monument",
+    "lat": 39.831432,
+    "lng": -77.251279,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "82nd New York Infantry Monument",
+    "lat": 39.81032,
+    "lng": -77.236081,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "83rd New York Infantry Monument",
+    "lat": 39.842937,
+    "lng": -77.242278,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "84th New York Infantry Marker (Stone-Meredith Avenue)",
+    "lat": 39.835815,
+    "lng": -77.252904,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "84th New York Infantry Marker (Culp's Hill)",
+    "lat": 39.817076,
+    "lng": -77.219574,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "84th New York Infantry Monument",
+    "lat": 39.837613,
+    "lng": -77.248494,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "86th New York Infantry Monument",
+    "lat": 39.793574,
+    "lng": -77.242615,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "93rd New York Infantry Monument",
+    "lat": 39.81461,
+    "lng": -77.23201,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "94th New York Infantry Monument",
+    "lat": 39.841285,
+    "lng": -77.242966,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "95th New York Infantry Monument",
+    "lat": 39.837428,
+    "lng": -77.248073,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "97th New York Infantry Monument",
+    "lat": 39.842506,
+    "lng": -77.242457,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "104th New York Infantry Monument",
+    "lat": 39.843207,
+    "lng": -77.241572,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "107th New York Infantry Monument",
+    "lat": 39.814736,
+    "lng": -77.216708,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "108th New York Infantry Monument",
+    "lat": 39.816262,
+    "lng": -77.234598,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "111th New York Infantry Monument",
+    "lat": 39.815416,
+    "lng": -77.235392,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "119th New York Infantry Monument",
+    "lat": 39.843132,
+    "lng": -77.230757,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "120th New York Infantry Monument",
+    "lat": 39.804666,
+    "lng": -77.246115,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "121st New York Infantry Monument",
+    "lat": 39.793652,
+    "lng": -77.235478,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "122nd New York Infantry Monument",
+    "lat": 39.817933,
+    "lng": -77.219274,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "123rd New York Infantry Monument",
+    "lat": 39.816256,
+    "lng": -77.218041,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "124th New York Infantry Monument",
+    "lat": 39.792376,
+    "lng": -77.242274,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "124th New York Infantry Marker",
+    "lat": 39.808672,
+    "lng": -77.235274,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "125th New York Infantry Monument",
+    "lat": 39.81474,
+    "lng": -77.23524,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Willard's Brigade Marker",
+    "lat": 39.80668,
+    "lng": -77.244846,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "126th New York Infantry Monument",
+    "lat": 39.8167,
+    "lng": -77.23444,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "134th New York Infantry Monument",
+    "lat": 39.822103,
+    "lng": -77.229421,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "136th New York Infantry Monument",
+    "lat": 39.81994,
+    "lng": -77.232919,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "137th New York Infantry Monument",
+    "lat": 39.817585,
+    "lng": -77.21947,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "140th New York Infantry Monument",
+    "lat": 39.791284,
+    "lng": -77.237089,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "145th New York Infantry Monument",
+    "lat": 39.815659,
+    "lng": -77.217528,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "146th New York Infantry Monument",
+    "lat": 39.792704,
+    "lng": -77.236808,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "147th New York Infantry Monument",
+    "lat": 39.838085,
+    "lng": -77.2478,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "149th New York Infantry Monument",
+    "lat": 39.817931,
+    "lng": -77.219274,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "150th New York Infantry Monument",
+    "lat": 39.819114,
+    "lng": -77.21958,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "154th New York Infantry Monument",
+    "lat": 39.835133,
+    "lng": -77.227571,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "157th New York Infantry Marker",
+    "lat": 39.845535,
+    "lng": -77.231352,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "157th New York Infantry Monument (Mummasburg Road)",
+    "lat": 39.842954,
+    "lng": -77.231477,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "157th New York Infantry Monument (Carlisle Road)",
+    "lat": 39.840154,
+    "lng": -77.236502,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "71st New York Infantry Monument",
+    "lat": 39.80179,
+    "lng": -77.247491,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Irish Brigade Monument",
+    "lat": 39.797052,
+    "lng": -77.245093,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "4th Ohio Infantry Monument",
+    "lat": 39.82097,
+    "lng": -77.228745,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Companies G & I, 4th Ohio Infantry Monument",
+    "lat": 39.81673,
+    "lng": -77.2363,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th Ohio Infantry Monument",
+    "lat": 39.816248,
+    "lng": -77.22031,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th Ohio Volunteer Infantry Monument",
+    "lat": 39.817313,
+    "lng": -77.21962,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "8th Ohio Infantry Monument",
+    "lat": 39.81605,
+    "lng": -77.23705,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "25th & 75th Ohio Infantry Monument (Wainwright Avenue)",
+    "lat": 39.845317,
+    "lng": -77.226656,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "25th & 75th Ohio Infantry Monument (Howard Avenue)",
+    "lat": 39.845326,
+    "lng": -77.226659,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "29th Ohio Infantry Monument",
+    "lat": 39.817861,
+    "lng": -77.219315,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "55th Ohio Infantry Monument",
+    "lat": 39.8214668,
+    "lng": -77.232914,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "61st Ohio Infantry Monument",
+    "lat": 39.841563,
+    "lng": -77.234024,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "66th Ohio Infantry Monument",
+    "lat": 39.820096,
+    "lng": -77.219591,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "73rd Ohio Infantry Monument",
+    "lat": 39.82042,
+    "lng": -77.232745,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "82nd Ohio Infantry Monument",
+    "lat": 39.843268,
+    "lng": -77.230014,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "107th Ohio Infantry Monument",
+    "lat": 39.84514,
+    "lng": -77.22714,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Candy's Brigade Marker",
+    "lat": 39.818668,
+    "lng": -77.21967,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "11th Pennsylvania Infantry Monument",
+    "lat": 39.842165,
+    "lng": -77.242589,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "23rd Pennsylvania Infantry Monument",
+    "lat": 39.817581,
+    "lng": -77.219741,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "26th Pennsylvania Infantry Monument",
+    "lat": 39.80894,
+    "lng": -77.242991,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "27th Pennsylvania Infantry Monument (Cemetery Hill)",
+    "lat": 39.822066,
+    "lng": -77.2297,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "27th Pennsylvania Infantry Monument (Coster Avenue)",
+    "lat": 39.835111,
+    "lng": -77.22801,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "28th Pennsylvania Infantry Monument (Slocum Avenue)",
+    "lat": 39.819178,
+    "lng": -77.220142,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "68th Pennsylvania Infantry Monument (Confederate Avenue)",
+    "lat": 39.81674,
+    "lng": -77.214712,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "29th Pennsylvania Infantry Monument",
+    "lat": 39.816472,
+    "lng": -77.218408,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "29th Pennsylvania Infantry Marker",
+    "lat": 39.816901,
+    "lng": -77.220017,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "46th Pennsylvania Infantry Monument",
+    "lat": 39.81527,
+    "lng": -77.217155,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "49th Pennsylvania Infantry Monument",
+    "lat": 39.783256,
+    "lng": -77.22767,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "53rd Pennsylvania Infantry Monument",
+    "lat": 39.7951,
+    "lng": -77.247,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "56th Pennsylvania Infantry Monument",
+    "lat": 39.838952,
+    "lng": -77.247287,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "57th Pennsylvania Infantry Monument",
+    "lat": 39.803688,
+    "lng": -77.248642,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "61st Pennsylvania Infantry Monument",
+    "lat": 39.808015,
+    "lng": -77.209404,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "62nd Pennsylvania Infantry Monument",
+    "lat": 39.79589,
+    "lng": -77.244082,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "63rd Pennsylvania Infantry Monument",
+    "lat": 39.801802,
+    "lng": -77.250123,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "68th Pennsylvania Infantry Monument (Peach Orchard)",
+    "lat": 39.80141,
+    "lng": -77.24915,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "68th Pennsylvania Infantry Monument (Emmitsburg Road)",
+    "lat": 39.800599,
+    "lng": -77.250442,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "69th Pennsylvania Infantry Monument",
+    "lat": 39.813001,
+    "lng": -77.236272,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "71st Pennsylvania Infantry Monument",
+    "lat": 39.813001,
+    "lng": -77.236272,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "72nd Pennsylvania Infantry Monument",
+    "lat": 39.81299,
+    "lng": -77.236267,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "72nd Pennsylvania Infantry Monument (2nd)",
+    "lat": 39.813032,
+    "lng": -77.2357,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "73rd Pennsylvania Infantry Monument",
+    "lat": 39.821917,
+    "lng": -77.229215,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "74th Pennsylvania Infantry Monument",
+    "lat": 39.840974,
+    "lng": -77.23437,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "75th Pennsylvania Infantry Monument (Howard Avenue)",
+    "lat": 39.84334,
+    "lng": -77.229609,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "81st Pennsylvania Infantry Monument",
+    "lat": 39.7966,
+    "lng": -77.24196,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "82nd Pennsylvania Infantry Monument",
+    "lat": 39.8179,
+    "lng": -77.219653,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "83rd Pennsylvania Infantry Monument",
+    "lat": 39.789957,
+    "lng": -77.236969,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "84th Pennsylvania Infantry Monument",
+    "lat": 39.808219,
+    "lng": -77.235325,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "88th Pennsylvania Infantry Monument",
+    "lat": 39.84341,
+    "lng": -77.24208,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "88th Pennsylvania Marker",
+    "lat": 39.843592,
+    "lng": -77.242902,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "88th Pennsylvania Marker",
+    "lat": 39.806506,
+    "lng": -77.235006,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "88th Pennsylvania Marker",
+    "lat": 39.81698,
+    "lng": -77.23414,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "90th Pennsylvania Infantry Monument (Doubleday Avenue)",
+    "lat": 39.84436,
+    "lng": -77.241971,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "90th Pennsylvania Infantry Monument (Ziegler's Grove)",
+    "lat": 39.816676,
+    "lng": -77.234434,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "90th Pennsylvania Infantry Marker",
+    "lat": 39.806202,
+    "lng": -77.234914,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Weed and Hazlett Monument",
+    "lat": 39.792121,
+    "lng": -77.236583,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "91st Pennsylvania Infantry Monument",
+    "lat": 39.792147,
+    "lng": -77.236728,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "93rd Pennsylvania Infantry Monument (Weikert Farm)",
+    "lat": 39.797007,
+    "lng": -77.237573,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "93rd Pennsylvania Infantry Monument (Sedgwick Avenue)",
+    "lat": 39.796059,
+    "lng": -77.234611,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "95th Pennsylvania Infantry Monument",
+    "lat": 39.795426,
+    "lng": -77.236518,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "96th Pennsylvania Infantry Monument",
+    "lat": 39.796094,
+    "lng": -77.237696,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "98th Pennsylvania Infantry Monument (Little Round Top)",
+    "lat": 39.793652,
+    "lng": -77.235483,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "98th Pennsylvania Infantry Monument (Altoff Farm)",
+    "lat": 39.797611,
+    "lng": -77.236655,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "99th Pennsylvania Infantry Monument (Houk's Ridge)",
+    "lat": 39.792372,
+    "lng": -77.242264,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "102nd Pennsylvania Infantry Monument",
+    "lat": 39.79745,
+    "lng": -77.2374,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "105th Pennsylvania Infantry Monument",
+    "lat": 39.80428,
+    "lng": -77.247905,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "106th Pennsylvania Infantry Monument (Howard Avenue)",
+    "lat": 39.81259,
+    "lng": -77.23563,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "106th Pennsylvania Infantry Monument (Codori Farm)",
+    "lat": 39.811699,
+    "lng": -77.239909,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "106th Pennsylvania Infantry Marker",
+    "lat": 39.82232,
+    "lng": -77.22944,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "107th Pennsylvania Infantry Monument",
+    "lat": 39.8419,
+    "lng": -77.24271,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "109th Pennsylvania Infantry Monument",
+    "lat": 39.81699,
+    "lng": -77.21931,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "110th Pennsylvania Infantry Monument",
+    "lat": 39.79656,
+    "lng": -77.24609,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "111th Pennsylvania Infantry Monument",
+    "lat": 39.816771,
+    "lng": -77.21876,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "114th Pennsylvania Infantry Monument",
+    "lat": 39.80353,
+    "lng": -77.24877,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "114th Pennsylvania Infantry Marker",
+    "lat": 39.813499,
+    "lng": -77.23464,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "115th Pennsylvania Infantry Monument",
+    "lat": 39.7959,
+    "lng": -77.24432,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "116th Pennsylvania Infantry Monument",
+    "lat": 39.79753,
+    "lng": -77.24588,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "118th Pennsylvania Infantry Monument (Sickles Avenue)",
+    "lat": 39.79765,
+    "lng": -77.24682,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "118th Pennsylvania Infantry Monument (Big Round Top)",
+    "lat": 39.7874,
+    "lng": -77.2388,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "119th Pennsylvania Infantry Monument (Big Round Top)",
+    "lat": 39.7867,
+    "lng": -77.2394,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "119th Pennsylvania Infantry Monument (Howe Avenue)",
+    "lat": 39.7838,
+    "lng": -77.2293,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "139th Pennsylvania Infantry Monument (Sickles Avenue)",
+    "lat": 39.80112,
+    "lng": -77.24702,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "139th Pennsylvania Infantry Monument (Althoff Avenue)",
+    "lat": 39.79661,
+    "lng": -77.23789,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "140th Pennsylvania Infantry Monument (Peach Orchard)",
+    "lat": 39.797561,
+    "lng": -77.245595,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "140th Pennsylvania Infantry Monument (Sickles Avenue)",
+    "lat": 39.79765,
+    "lng": -77.246225,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "141st Pennsylvania Infantry Monument",
+    "lat": 39.80109,
+    "lng": -77.24881,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "142nd Pennsylvania Infantry Monument",
+    "lat": 39.83274,
+    "lng": -77.25083,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "143rd Pennsylvania Infantry Monument",
+    "lat": 39.836596,
+    "lng": -77.249245,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "143rd Pennsylvania Infantry Marker",
+    "lat": 39.809861,
+    "lng": -77.236135,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "145th Pennsylvania Infantry Monument",
+    "lat": 39.795622,
+    "lng": -77.247105,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "147th Pennsylvania Infantry Monument (Little Round Top)",
+    "lat": 39.794561,
+    "lng": -77.234346,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "147th Pennsylvania Infantry Monument (Pardee Field)",
+    "lat": 39.815725,
+    "lng": -77.219618,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "147th Pennsylvania Infantry Monument (Geary Avenue)",
+    "lat": 39.81583,
+    "lng": -77.220388,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "148th Pennsylvania Infantry Monument",
+    "lat": 39.795958,
+    "lng": -77.241974,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "148th Pennsylvania Infantry Marker",
+    "lat": 39.805447,
+    "lng": -77.234837,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "149th Pennsylvania Infantry Monument (Chambersburg Pike)",
+    "lat": 39.83756,
+    "lng": -77.25141,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "149th Pennsylvania Infantry Monument (Confederate Avenue)",
+    "lat": 39.829512,
+    "lng": -77.244018,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "150th Pennsylvania Infantry Monument (Stone-Meredith Avenue)",
+    "lat": 39.83688,
+    "lng": -77.25223,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "151st Pennsylvania Infantry Monument",
+    "lat": 39.83375,
+    "lng": -77.25103,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "153rd Pennsylvania Infantry Monument (Howard Avenue)",
+    "lat": 39.845684,
+    "lng": -77.226152,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "153rd Pennsylvania Infantry Monument (Wainwright Avenue)",
+    "lat": 39.821641,
+    "lng": -77.22742,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "155th Pennsylvania Infantry Monument",
+    "lat": 39.792964,
+    "lng": -77.236508,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Pennsylvania Reserves Monument",
+    "lat": 39.79665,
+    "lng": -77.24062,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "2nd Pennsylvania Reserves Monument",
+    "lat": 39.796275,
+    "lng": -77.241204,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th Pennsylvania Reserves Monument",
+    "lat": 39.78644,
+    "lng": -77.239058,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "6th Pennsylvania Reserves Monument",
+    "lat": 39.797524,
+    "lng": -77.240099,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "9th Pennsylvania Reserves Monument",
+    "lat": 39.78965,
+    "lng": -77.236965,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "10th Pennsylvania Reserves Monument",
+    "lat": 39.7887,
+    "lng": -77.23694,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "11th Pennsylvania Reserves Monument",
+    "lat": 39.797,
+    "lng": -77.24009,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "12th Pennsylvania Reserves Monument",
+    "lat": 39.7863,
+    "lng": -77.2393,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "13th Pennsylvania Reserves Monument",
+    "lat": 39.79525,
+    "lng": -77.24135,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "26th Pennsylvania Emergency Militia Monument",
+    "lat": 39.830983,
+    "lng": -77.236972,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "2nd Rhode Island Infantry Monument",
+    "lat": 39.795597,
+    "lng": -77.234104,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "1st Vermont Brigade Monument",
+    "lat": 39.784973,
+    "lng": -77.232374,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Stannard Vermont Brigade Monument",
+    "lat": 39.80945,
+    "lng": -77.23636,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "13th Vermont Infantry Monument",
+    "lat": 39.809665,
+    "lng": -77.236269,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "14th Vermont Infantry Monument",
+    "lat": 39.80882,
+    "lng": -77.236594,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "16th Vermont Infantry Monument",
+    "lat": 39.809134,
+    "lng": -77.236551,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th West Virginia Infantry Monument",
+    "lat": 39.82169,
+    "lng": -77.22899,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "2nd Wisconsin Infantry Monument",
+    "lat": 39.83555,
+    "lng": -77.25387,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "3rd Wisconsin Infantry Monument",
+    "lat": 39.81251,
+    "lng": -77.21598,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "5th Wisconsin Infantry Monument",
+    "lat": 39.78318,
+    "lng": -77.22723,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "3rd Wisconsin Infantry Monument",
+    "lat": 39.83741,
+    "lng": -77.24813,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "7th Wisconsin Infantry Monument",
+    "lat": 39.835747,
+    "lng": -77.253888,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "26th Wisconsin Infantry Monument",
+    "lat": 39.8434,
+    "lng": -77.2293,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "High Water Mark of the Rebellion Monument",
+    "lat": 39.812467,
+    "lng": -77.23573,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "David Wills House",
+    "lat": 39.830667,
+    "lng": -77.230833,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "John Page Nicholson Marker",
+    "lat": 39.814462,
+    "lng": -77.235218,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Soldiers National Monument",
+    "lat": 39.819801,
+    "lng": -77.231198,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Soldiers and Sailors of the Confederacy Monument",
+    "lat": 39.784969,
+    "lng": -77.254039,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Chambliss' Brigade Tablet",
+    "lat": 39.833583,
+    "lng": -77.172083,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "Hampton's Brigade Tablet",
+    "lat": 39.8365,
+    "lng": -77.168833,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  },
+  {
+    "name": "List of monuments of the Gettysburg Battlefield",
+    "lat": 39.832433,
+    "lng": -77.173833,
+    "desc": "List of monuments of the Gettysburg Battlefield",
+    "type": "Infantry"
+  }
+]

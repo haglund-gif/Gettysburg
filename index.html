@@ -415,13 +415,29 @@ function addItemToMap(item){
 
     marker.on("click", () => {
 
-        document.getElementById("info").innerHTML =
-            "<h3 class='infoTitle'>" +
-            item.name +
-            "</h3>" +
-            "<b>" + item.type +
-            "</b><br><br>" +
-            item.desc;
+      
+
+document.getElementById("info").innerHTML =
+    "<h3 class='infoTitle'>" +
+    item.name +
+    "</h3>" +
+    "<b>" + item.type +
+    "</b><br><br>" +
+    item.desc +
+
+    "<br><br><b>VIDEO TEST BUTTON</b>" +
+
+    "<br><br><a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>▶ Watch Test Video</a>";
+
+
+
+
+
+
+
+    (item.name === "Lee Begins Withdrawal"
+        ? "<br><br><a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>▶ Watch Lee Video</a>"
+        : "");
 
     });
 
@@ -511,13 +527,19 @@ function doSearch() {
             entry.marker.openPopup();
 
             document.getElementById("info").innerHTML =
-                "<h3 class='infoTitle'>" +
-                entry.item.name +
-                "</h3>" +
-                "<b>" +
-                entry.item.type +
-                "</b><br><br>" +
-                entry.item.desc;
+    "<h3 class='infoTitle'>" +
+    entry.item.name +
+    "</h3>" +
+    "<b>" +
+    entry.item.type +
+    "</b><br><br>" +
+    entry.item.desc +
+
+    "<hr>" +
+
+    "<a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>" +
+    "▶ TEST VIDEO" +
+    "</a>";
 
             return;
         }

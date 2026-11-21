@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Gettysburg Explorer</title>
+<title>Gettysburg Explorer MASTER VERSION</title>
 
 <link rel="stylesheet"
  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -40,7 +40,7 @@ html,body{
 }
 
 #sidebar{
-    width:320px;
+    width:250px;
     border-left:1px solid #ccc;
     padding:12px;
     overflow:auto;
@@ -110,7 +110,7 @@ July 3
 Retreat
 </button>
 
-
+const monumentLayer = L.layerGroup().addTo(map);
 
 
 
@@ -183,8 +183,9 @@ Try:
     <small>
     Gettysburg Explorer<br>
     Basemaps ©Sources: Esri, Maxar, Earthstar Geographics, USDA FSA, USGS<br>
-    Historical information compiled from public sources. Major GPS coordinates taken by author.
-    </small>
+    Historical information compiled from public sources. Major GPS coordinates taken by Jon Haglund.
+    copyright 2026 Jon Haglund. All rights reserved.
+</small>
 
 </div>
    
@@ -209,7 +210,7 @@ const osm = L.tileLayer(
     attribution:'Tiles © Esri'
 }).addTo(map);
 //=================================================
-// ELEVATION OVERLAY (SIMPLE DEMO)
+// ELEVATION OVERLAY (SIMPLE DEMO but works)
 //=================================================
 
 const elevationLayer = L.layerGroup();
@@ -322,30 +323,24 @@ function addItemToMap(item){
 
 
 
-/* BATTLEFIELD ICONS */
-
-const monumentIcon = L.divIcon({
-    html:"🏛️",
-    className:"",
-    iconSize:[48,48]
+/* BATTLEFIELD ICONS */const monumentIcon = L.divIcon({
+    html:"<span style='font-size:35px'>🏛️</span>",
+    className:""
 });
 
 const commanderIcon = L.divIcon({
-    html:"⭐",
-    className:"",
-    iconSize:[48,48]
+    html:"<span style='font-size:35px'>⭐</span>",
+    className:""
 });
 
 const terrainIcon = L.divIcon({
-    html:"⛰️",
-    className:"",
-    iconSize:[48,48]
+    html:"<span style='font-size:35px'>⛰️</span>",
+    className:""
 });
 
 const battleIcon = L.divIcon({
-    html:"⚔️",
-    className:"",
-    iconSize:[48,48]
+    html:"<span style='font-size:35px'>⚔️</span>",
+    className:""
 });
 
 
@@ -367,7 +362,7 @@ L.control.layers(
 ).addTo(map);
 
 //=================================================
-// SEARCH
+// SEARCH   code above is labels for small box quotes are labels
 //=================================================
 
 function doSearch() {
@@ -519,31 +514,63 @@ fetch('data/terrain.json')
 });
 
 
+ 
+
+
+
 /* MONUMENTS */
 
-fetch('data/monuments.json')
+const monumentFiles = [
+    'data/monuments/infantry/infantry.json',
+    'data/monuments/cavalry/cavalry.json',
+    'data/monuments/artillery/artillery.json',
+    'data/monuments/engineers/engineers.json',
+    'data/monuments/memorials/memorials.json'
+];
 
-.then(response => response.json())
+monumentFiles.forEach(file => {
 
-.then(data => {
+    fetch(file)
+    .then(response => response.json())
+    .then(data => {
 
-    data.forEach(item => {
+        console.log("Loaded", file, data.length);
 
-        addItemToMap(item);
+        data.forEach(item => {
+
+         
+         
+         
+         
+         
+            L.circleMarker(
+                [item.lat, item.lng],
+                {
+                    radius: 5,
+                    color: "gray",
+                    fillColor: "gray",
+                    fillOpacity: 0.7
+                }
+            )
+            .addTo(monuments)
+            .bindPopup(
+                `<b>${item.name}</b><br>${item.type}`
+            );
+
+        });
+
+    })
+    .catch(error => {
+
+        console.error(
+            "Monuments load failed:",
+            file,
+            error
+        );
 
     });
 
-})
-
-.catch(error => {
-
-    console.error(
-        "Monuments load failed",
-        error
-    );
-
 });
-
 
 /* START TIMELINE */
 

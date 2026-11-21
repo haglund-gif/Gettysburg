@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+
+<title>Gettysburg Data Editor</title>
+
+<style>
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    margin:20px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:6px;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:80px;
+}
+
+button{
+    margin-top:10px;
+    margin-right:10px;
+    padding:10px;
+}
+
+#output{
+    margin-top:20px;
+    background:#f4f4f4;
+    border:1px solid #ccc;
+    padding:10px;
+    white-space:pre-wrap;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Gettysburg Data Editor</h1>
+
+<label>Type</label>
+
+<select id="type"
+        onchange="buildForm()">
+
+    <option>Commander</option>
+    <option>Battle</option>
+    <option>Terrain</option>
+    <option>Monument</option>
+    <option>Artillery</option>
+    <option>Wagons</option>
+    <option>Regiment</option>
+
+</select>
+
+<div id="fields"></div>
+
+<button onclick="generateJSON()">
+Generate JSON
+</button>
+
+<button onclick="copyJSON()">
+Copy JSON
+</button>
+
+<button onclick="downloadJSON()">
+Download JSON
+</button>
+
+<h3>Output</h3>
+
+<div id="output"></div>
+
+<script>
+
+const schemas = {
+
+Commander:[
+"name",
+"lat",
+"lng",
+"period",
+"side",
+
+"photo_original",
+"photo_colorized",
+
+"video",
+"audio",
+"document",
+
+"heading",
+
+"desc"
+],
+
+Battle:[
+"name",
+"lat",
+"lng",
+"period",
+
+"video",
+"document",
+
+"desc"
+],
+
+Terrain:[
+"name",
+"lat",
+"lng",
+
+"photo_original",
+
+"video",
+
+"desc"
+],
+
+Monument:[
+"name",
+"lat",
+"lng",
+
+"photo_original",
+
+"video",
+
+"desc"
+],
+
+Artillery:[
+"name",
+"lat",
+"lng",
+
+"side",
+
+"guns",
+
+"heading",
+
+"photo_original",
+"photo_colorized",
+
+"video",
+
+"desc"
+],
+
+Wagons:[
+"name",
+"lat",
+"lng",
+
+"side",
+
+"wagons",
+
+"heading",
+
+"video",
+
+"desc"
+],
+
+Regiment:[
+"name",
+"lat",
+"lng",
+
+"side",
+
+"strength",
+
+"frontage",
+
+"heading",
+
+"photo_original",
+"photo_colorized",
+
+"video",
+
+"desc"
+]
+
+};
+
+
+function buildForm(){
+
+    const type =
+        document.getElementById(
+            "type"
+        ).value;
+
+    const fields =
+        schemas[type];
+
+    let html="";
+
+    fields.forEach(field=>{
+
+        html+=
+        "<label>" +
+        field +
+        "</label>";
+
+        if(field==="desc"){
+
+            html+=
+            "<textarea id='" +
+            field +
+            "'></textarea>";
+
+        }
+        else{
+
+            html+=
+            "<input id='" +
+            field +
+            "'>";
+
+        }
+
+    });
+
+    document.getElementById(
+        "fields"
+    ).innerHTML=html;
+}
+
+
+function generateJSON(){
+
+    const type =
+        document.getElementById(
+            "type"
+        ).value;
+
+    const fields =
+        schemas[type];
+
+    const obj = {};
+
+    obj.type=type;
+
+    fields.forEach(field=>{
+
+        obj[field] =
+
+           document.getElementById(
+               field
+           ).value;
+
+    });
+
+    document.getElementById(
+        "output"
+    ).textContent =
+
+        JSON.stringify(
+            obj,
+            null,
+            2
+        );
+
+}
+
+
+function copyJSON(){
+
+    navigator.clipboard.writeText(
+
+        document.getElementById(
+            "output"
+        ).textContent
+
+    );
+
+    alert(
+        "Copied to clipboard."
+    );
+
+}
+
+
+function downloadJSON(){
+
+    const blob =
+
+        new Blob(
+
+            [
+                document.getElementById(
+                    "output"
+                ).textContent
+            ],
+
+            {
+                type:"application/json"
+            }
+
+        );
+
+    const a =
+        document.createElement("a");
+
+    a.href =
+        URL.createObjectURL(blob);
+
+    a.download =
+        "record.json";
+
+    a.click();
+
+}
+
+
+buildForm();
+
+</script>
+
+</body>
+
+</html>

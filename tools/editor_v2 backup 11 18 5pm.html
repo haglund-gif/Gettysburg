@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Gettysburg CMS Editor V2</title>
+
+<style>
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:20px;
+}
+
+h1{
+    color:#15395b;
+}
+
+.section{
+    border:1px solid #ccc;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-top:8px;
+}
+
+input,textarea,select{
+    width:100%;
+    padding:6px;
+    box-sizing:border-box;
+}
+
+textarea{
+    min-height:100px;
+}
+
+button{
+    padding:10px;
+    margin:5px;
+}
+
+#formArea{
+    margin-top:15px;
+}
+
+#status{
+    background:#f4f4f4;
+    padding:10px;
+    border:1px solid #ccc;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Gettysburg CMS Editor V2</h1>
+
+<div class="section">
+
+<h3>Schema</h3>
+
+<button onclick="loadSchema()">
+Load schema.json
+</button>
+
+<div id="schemaStatus">
+Schema not loaded
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>Dataset</h3>
+
+<input
+type="file"
+id="datasetFile"
+accept=".json">
+
+<br><br>
+
+<input
+type="text"
+id="searchText"
+placeholder="Search record by name">
+
+<button onclick="findRecord()">
+Find Record
+</button>
+
+<div id="status">
+Dataset not loaded
+</div>
+
+</div>
+
+<div class="section">
+
+<h3>Record Type</h3>
+
+<select id="recordType"
+onchange="buildForm()">
+</select>
+
+</div>
+
+<div class="section">
+
+<h3>Record Editor</h3>
+
+<div id="formArea"></div>
+
+</div>
+
+
+<div class="section">
+
+<h3>Media Preview</h3>
+
+<div id="mediaPreview">
+
+No media selected.
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="section">
+
+<button onclick="saveRecord()">
+
+Add / Update Record
+
+</button>
+
+<button onclick="downloadDataset()">
+
+Download Dataset
+
+</button>
+
+</div>
+
+<h3>Preview</h3>
+
+<pre id="preview"></pre>
+
+<script>
+
+let schema = {};
+
+let dataset = [];
+
+let currentRecord = -1;
+
+/* ==========================
+   LOAD SCHEMA
+========================== */
+
+async function loadSchema(){
+
+    try{
+
+        const response =
+            await fetch(
+                '../data/schema.json'
+            );
+
+        schema =
+            await response.json();
+
+        document
+        .getElementById(
+            "schemaStatus"
+        ).innerHTML =
+        "Schema loaded";
+
+        populateTypes();
+
+    }
+
+    catch(error){
+
+        alert(
+            "Could not load schema.json"
+        );
+
+    }
+
+}
+
+/* ==========================
+   TYPE LIST
+========================== */
+
+function populateTypes(){
+
+    const select =
+        document.getElementById(
+            "recordType"
+        );
+
+    select.innerHTML="";
+
+    Object.keys(schema)
+    .forEach(type=>{
+
+        const option =
+            document
+            .createElement(
+                "option"
+            );
+
+        option.value=type;
+
+        option.textContent=type;
+
+        select.appendChild(
+            option
+        );
+
+    });
+
+    buildForm();
+
+}
+
+/* ==========================
+   BUILD FORM
+========================== */
+
+function buildForm(){
+
+    const type =
+        document
+        .getElementById(
+            "recordType"
+        ).value;
+
+    if(!schema[type]) return;
+
+    let html="";
+
+    schema[type]
+    .forEach(field=>{
+
+        html +=
+        "<label>" +
+        field +
+        "</label>";
+
+        if(
+
+            field==="desc"
+
+        ){
+
+            html +=
+            "<textarea id='" +
+            field +
+            "'></textarea>";
+
+        }
+
+        else{
+
+            html +=
+            "<input id='" +
+            field +
+            "'>";
+
+        }
+
+    });
+
+    document
+    .getElementById(
+        "formArea"
+    ).innerHTML =
+    html;
+
+}
+
+/* ==========================
+   LOAD DATASET
+========================== */
+
+document
+.getElementById(
+    "datasetFile"
+)
+.addEventListener(
+    "change",
+    function(event){
+
+    const file =
+        event.target.files[0];
+
+    const reader =
+        new FileReader();
+
+    reader.onload =
+    function(e){
+
+        dataset =
+            JSON.parse(
+                e.target.result
+            );
+
+        document
+        .getElementById(
+            "status"
+        ).innerHTML =
+
+        dataset.length +
+        " records loaded";
+
+    };
+
+    reader.readAsText(
+        file
+    );
+
+});
+
+/* ==========================
+   FIND RECORD
+========================== */
+
+function findRecord(){
+
+    const search =
+
+    document
+    .getElementById(
+        "searchText"
+    )
+    .value
+    .trim()
+    .toLowerCase();
+
+    currentRecord =
+
+    dataset.findIndex(
+
+        item =>
+
+        item.name &&
+
+        item.name
+        .toLowerCase()
+        .includes(search)
+
+    );
+
+    if(currentRecord<0){
+
+        alert(
+            "No match found"
+        );
+
+        return;
+
+    }
+
+    const record =
+
+        dataset[
+            currentRecord
+        ];
+
+    document
+    .getElementById(
+        "recordType"
+    ).value =
+        record.type;
+
+    buildForm();
+
+    Object.keys(record)
+    .forEach(key=>{
+
+        const field =
+
+        document
+        .getElementById(
+            key
+        );
+
+        if(field){
+
+            field.value =
+                record[key];
+
+        }
+
+    });
+
+}
+
+/* ==========================
+   BUILD RECORD
+========================== */
+
+function buildRecord(){
+
+    const type =
+
+    document
+    .getElementById(
+        "recordType"
+    ).value;
+
+    const record = {
+
+        type:type
+
+    };
+
+    schema[type]
+    .forEach(field=>{
+
+        const control =
+
+        document
+        .getElementById(
+            field
+        );
+
+        if(control){
+
+            record[field] =
+                control.value;
+
+        }
+
+    });
+
+    return record;
+
+}
+
+/* ==========================
+   SAVE / MERGE
+========================== */
+
+function saveRecord(){
+
+    const record =
+
+        buildRecord();
+
+    const match =
+
+    dataset.findIndex(
+
+        item =>
+
+        item.id &&
+        record.id &&
+        item.id===record.id
+
+    );
+
+    if(match>=0){
+
+        dataset[match] = {
+
+            ...dataset[match],
+
+            ...record
+
+        };
+
+    }
+
+    else{
+
+  const nameMatch =
+
+dataset.findIndex(
+
+    item =>
+
+    item.name &&
+    record.name &&
+
+    item.name.toLowerCase() ===
+        record.name.toLowerCase() &&
+
+    item.type === record.type
+
+);
+        if(nameMatch>=0){
+
+            dataset[nameMatch] = {
+
+                ...dataset[nameMatch],
+
+                ...record
+
+            };
+
+        }
+
+        else{
+
+            dataset.push(
+                record
+            );
+
+        }
+
+    }
+
+    document
+    .getElementById(
+        "preview"
+    )
+    .textContent =
+
+    JSON.stringify(
+        record,
+        null,
+        2
+    );
+
+    alert(
+        "Record Saved"
+    );
+
+}
+
+/* ==========================
+   DOWNLOAD
+========================== */
+
+function downloadDataset(){
+
+    const blob =
+
+    new Blob(
+
+        [
+            JSON.stringify(
+                dataset,
+                null,
+                2
+            )
+        ],
+
+        {
+            type:
+            "application/json"
+        }
+
+    );
+
+ const a =
+    document.createElement(
+        "a"
+    );
+
+a.href =
+    URL.createObjectURL(
+        blob
+    );
+
+let filename = "updated-dataset.json";
+
+if(
+    document.getElementById("datasetFile").files.length > 0
+){
+
+    filename =
+        document
+        .getElementById("datasetFile")
+        .files[0]
+        .name
+        .replace(
+            ".json",
+            "-updated.json"
+        );
+
+}
+
+const now = new Date();
+
+const stamp =
+    now.getFullYear() +
+    "-" +
+    String(now.getMonth()+1).padStart(2,"0") +
+    "-" +
+    String(now.getDate()).padStart(2,"0");
+
+filename =
+    filename.replace(
+        "-updated.json",
+        "-updated-" + stamp + ".json"
+    );
+
+a.download = filename;
+
+a.click();
+}
+
+/* ==========================
+   START
+========================== */
+
+loadSchema();
+
+</script>
+
+</body>
+</html>

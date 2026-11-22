@@ -277,9 +277,11 @@ or terrain feature to learn more.
 
 <h4>Quick Search</h4>
 
-<p>
-Try:
+<p>Try:</p>
+
 <ul>
+
+
 <li>Little Round Top</li>
 <li>Lee</li>
 <li>Chamberlain</li>
@@ -287,7 +289,6 @@ Try:
 <li>Devil's Den</li>
 <li>Cemetery Hill</li>
 </ul>
-</p>
 
 
 
@@ -427,11 +428,10 @@ document.getElementById("info").innerHTML =
 
    
 
-    "<br><br><a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>▶ Watch Test Video</a>";
 
-
-
-
+(item.video
+ ? "<hr><a href='" + item.video + "' target='_blank'>▶ Watch Video</a>"
+ : "");
 
 
 
@@ -535,7 +535,8 @@ function doSearch() {
     "<hr>" +
 
     "<a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>" +
-    "▶ TEST VIDEO" +
+    "▶ Watch VIDEO" +
+
     "</a>";
 
             return;
@@ -617,7 +618,7 @@ if(activeBtn){
 
 "<hr>" +
 
-"<a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>▶ TEST VIDEO</a>";
+"<a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>▶ WATCH VIDEO</a>";
 
 
 
@@ -752,6 +753,12 @@ function locateMe(){
 
             const lat = position.coords.latitude;
             const lng = position.coords.longitude;
+
+if(userMarker){
+    map.removeLayer(userMarker);
+}
+
+
 
             userMarker = L.circleMarker(
                 [lat,lng],

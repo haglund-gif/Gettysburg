@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gettysburg Explorer MASTER VERSION</title>
+
+<link rel="stylesheet"
+ href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<style>
+html,body{
+    margin:0;
+    height:100%;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+#toolbar{
+    height:50px;
+    background:#1c2c44;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:0 10px;
+    gap:10px;
+}
+
+#searchBox{
+    width:250px;
+    padding:6px;
+}
+
+#container{
+    display:flex;
+    height:calc(100% - 50px);
+}
+
+#map{
+    flex:1;
+}
+
+#sidebar{
+    width:250px;
+    border-left:1px solid #ccc;
+    padding:12px;
+    overflow:auto;
+    background:#fafafa;
+}
+
+h2{
+    margin-top:0;
+}
+
+.infoTitle{
+    color:#15395b;
+}
+
+.legend{
+    margin-top:15px;
+    font-size:14px;
+}
+
+.color{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    margin-right:5px;
+}
+
+
+.leaflet-div-icon{
+    background:transparent;
+    border:none;
+    font-size:42px;
+}
+</style>
+
+
+
+</head>
+
+<body>
+
+<div id="toolbar">
+    <strong>Gettysburg Explorer</strong>
+
+    <input id="searchBox"
+           placeholder="Search monument, person, place">
+
+    <button onclick="doSearch()">Search</button>
+
+
+<button onclick="loadPeriod('prebattle')">
+Pre-Battle
+</button>
+
+<button onclick="loadPeriod('july1')">
+July 1
+</button>
+
+<button onclick="loadPeriod('july2')">
+July 2
+</button>
+
+<button onclick="loadPeriod('july3')">
+July 3
+</button>
+
+<button onclick="loadPeriod('retreat')">
+Retreat
+</button>
+
+
+
+
+
+
+</div>
+
+<div id="container">
+
+    <div id="map"></div>
+
+    <div id="sidebar">
+
+        <h2>Gettysburg Explorer</h2>
+
+        <div id="info">
+            Click a marker on the map.
+        </div>
+
+
+
+
+
+
+
+
+        
+<div id="sidebar">
+
+<hr>
+ 
+<p>
+Interactive battlefield map of Gettysburg.
+Click any monument, commander, battle,
+or terrain feature to learn more.
+</p>
+
+<h4>Map Symbols</h4>
+
+<p>
+⛰️ Terrain Features<br>
+⭐ Commanders<br>
+🏛️ Monuments<br>
+⚔️ Battles
+</p>
+
+<h4>Quick Search</h4>
+
+<p>
+Try:
+<ul>
+<li>Little Round Top</li>
+<li>Lee</li>
+<li>Chamberlain</li>
+<li>Pickett's Charge</li>
+<li>Devil's Den</li>
+<li>Cemetery Hill</li>
+</ul>
+</p>
+
+
+
+
+  
+</div>
+
+
+
+
+
+    <small>
+    Gettysburg Explorer<br>
+    Basemaps ©Sources: Esri, Maxar, Earthstar Geographics, USDA FSA, USGS<br>
+    Historical information compiled from public sources. Major GPS coordinates taken by Jon Haglund.
+    copyright 2026 Jon Haglund. All rights reserved.
+</small>
+
+</div>
+   
+
+ </div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+
+//=================================================
+// MAP
+//=================================================
+
+const map = L.map('map').setView([39.830,-77.231],13);
+
+const osm = L.tileLayer(
+'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+{
+    attribution:'Tiles © Esri'
+}).addTo(map);
+//=================================================
+// ELEVATION OVERLAY (SIMPLE DEMO)
+//=================================================
+
+const elevationLayer = L.layerGroup();
+
+L.circle(
+    [39.792,-77.236],
+    {
+        radius:900,
+        color:'red',
+        fillColor:'red',
+        fillOpacity:.25
+    }).addTo(elevationLayer);
+
+L.circle(
+    [39.820,-77.230],
+    {
+        radius:1000,
+        color:'orange',
+        fillColor:'orange',
+        fillOpacity:.20
+    }).addTo(elevationLayer);
+
+L.circle(
+    [39.835,-77.245],
+    {
+        radius:1200,
+        color:'yellow',
+        fillColor:'yellow',
+        fillOpacity:.15
+    }).addTo(elevationLayer);
+
+// elevationLayer.addTo(map);
+
+//=================================================
+// DATA
+//=================================================
+
+ //=================================================
+// LAYERS
+//=================================================
+
+const monuments = L.layerGroup().addTo(map);
+const commanders = L.layerGroup().addTo(map);
+
+const terrain = L.layerGroup().addTo(map);
+const timelineLayer = L.layerGroup().addTo(map);
+
+
+
+const markerList=[];
+
+function addItemToMap(item){
+
+    let icon = terrainIcon;
+
+    if(item.type === "Monument")
+        icon = monumentIcon;
+
+    if(item.type === "Commander")
+        icon = commanderIcon;
+
+    if(item.type==="Battle")
+        icon = battleIcon;
+
+
+    if(item.type === "Terrain")
+        icon = terrainIcon;
+
+    const marker = L.marker(
+        [parseFloat(item.lat), parseFloat(item.lng)],
+        {
+            icon: icon
+        }
+    );
+
+    marker.bindPopup(
+        "<b>" + item.name + "</b><br>" +
+        item.type
+    );
+
+    marker.on("click", () => {
+
+        document.getElementById("info").innerHTML =
+            "<h3 class='infoTitle'>" +
+            item.name +
+            "</h3>" +
+            "<b>" + item.type +
+            "</b><br><br>" +
+            item.desc;
+
+    });
+
+    if(item.type === "Monument")
+        marker.addTo(monuments);
+
+    if(item.type === "Commander")
+        marker.addTo(commanders);
+
+    if(item.type === "Terrain")
+        marker.addTo(terrain);
+
+    markerList.push({
+        name: item.name.toLowerCase(),
+        marker: marker,
+        item: item
+    });
+
+}
+
+
+
+
+/* BATTLEFIELD ICONS */const monumentIcon = L.divIcon({
+    html:"<span style='font-size:35px'>🏛️</span>",
+    className:""
+});
+
+const commanderIcon = L.divIcon({
+    html:"<span style='font-size:35px'>⭐</span>",
+    className:""
+});
+
+const terrainIcon = L.divIcon({
+    html:"<span style='font-size:35px'>⛰️</span>",
+    className:""
+});
+
+const battleIcon = L.divIcon({
+    html:"<span style='font-size:35px'>⚔️</span>",
+    className:""
+});
+
+
+
+
+
+ 
+
+L.control.layers(
+{
+    "OpenStreetMap":osm
+},
+{
+    "Monuments":monuments,
+    "Commanders":commanders,
+    "Terrain Features":terrain,
+    "Elevation Overlay":elevationLayer
+}
+).addTo(map);
+
+//=================================================
+// SEARCH
+//=================================================
+
+function doSearch() {
+
+    const text = document
+        .getElementById("searchBox")
+        .value
+        .trim()
+        .toLowerCase();
+
+    for(const entry of markerList){
+
+       if(
+    entry.name.includes(text) ||
+    text.includes(entry.name)
+)
+{
+
+            map.setView(
+                entry.marker.getLatLng(),
+                15
+            );
+
+            entry.marker.openPopup();
+
+            document.getElementById("info").innerHTML =
+                "<h3 class='infoTitle'>" +
+                entry.item.name +
+                "</h3>" +
+                "<b>" +
+                entry.item.type +
+                "</b><br><br>" +
+                entry.item.desc;
+
+            return;
+        }
+    }
+
+    alert("Not found");
+}
+
+
+
+
+function loadPeriod(period){
+
+    timelineLayer.clearLayers();
+
+    fetch('data/' + period + '.json')
+
+    .then(response => response.json())
+
+    .then(data => {
+
+        data.forEach(item => {
+
+            let icon = battleIcon;
+
+            if(item.type === "Commander")
+                icon = commanderIcon;
+
+            if(item.type === "Battle")
+                icon = battleIcon;
+
+            const marker = L.marker(
+                [item.lat,item.lng],
+                {
+                    icon: icon
+                }
+            );
+
+            marker.bindPopup(
+                "<b>" +
+                item.name +
+                "</b><br>" +
+                item.type
+            );
+
+            marker.on('click',()=>{
+
+                document.getElementById('info').innerHTML =
+
+                    "<h3 class='infoTitle'>" +
+                    item.name +
+                    "</h3>" +
+
+                    "<b>" +
+                    item.type +
+                    "</b><br><br>" +
+
+                    item.desc;
+
+            });
+
+            marker.addTo(timelineLayer);
+
+            markerList.push({
+                name:item.name.toLowerCase(),
+                marker:marker,
+                item:item
+            });
+
+        });
+
+    })
+
+    .catch(error => {
+
+        console.error(
+            "Failed loading " + period,
+            error
+        );
+
+    });
+
+}
+
+
+
+
+
+
+
+console.log("Starting JSON load");
+
+/* TERRAIN */
+
+fetch('data/terrain.json')
+
+.then(response => response.json())
+
+.then(data => {
+
+    data.forEach(item => {
+
+        addItemToMap(item);
+
+    });
+
+})
+
+.catch(error => {
+
+    console.error(
+        "Terrain load failed",
+        error
+    );
+
+});
+
+
+/* MONUMENTS */
+
+
+
+/* MONUMENTS */
+
+const monumentFiles = [
+    'data/monuments/infantry/infantry.json',
+    'data/monuments/cavalry/cavalry.json',
+    'data/monuments/artillery/artillery.json',
+    'data/monuments/engineers/engineers.json',
+    'data/monuments/memorials/memorials.json'
+];
+
+monumentFiles.forEach(file => {
+
+    fetch(file)
+    .then(response => response.json())
+    .then(data => {
+
+        console.log("Loaded", file, data.length);
+
+        data.forEach(item => {
+
+            L.circleMarker(
+                [item.lat, item.lng],
+                {
+                    radius: 5,
+                    color: "gray",
+                    fillColor: "gray",
+                    fillOpacity: 0.7
+                }
+            )
+            .addTo(map)
+            .bindPopup(
+                `<b>${item.name}</b><br>${item.type}`
+            );
+
+        });
+
+    })
+    .catch(error => {
+
+        console.error(
+            "Monuments load failed:",
+            file,
+            error
+        );
+
+    });
+
+});
+
+/* START TIMELINE */
+
+loadPeriod('prebattle');
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "name":"Little Round Top Monument Area",
+    "lat":39.792,
+    "lng":-77.236,
+    "type":"Monument",
+    "desc":"Cluster of monuments marking the regiments that defended Little Round Top during fighting on July 2."
+  },
+  {
+    "name":"Virginia Monument",
+    "lat":39.820,
+    "lng":-77.252,
+    "type":"Monument",
+    "desc":"Features a prominent equestrian statue of Robert E. Lee and honors Virginia soldiers who fought at Gettysburg."
+  },
+  {
+    "name":"Eternal Light Peace Memorial",
+    "lat":39.84845,
+    "lng":-77.243538,
+    "type":"Monument",
+    "desc":"Dedicated in 1938 during the reunion of Union and Confederate veterans as a symbol of national reconciliation."
+  },
+  {
+    "name":"72nd Pennsylvania Monument",
+    "lat":39.814,
+    "lng":-77.235,
+    "type":"Monument",
+    "desc":"One of Gettysburg's most recognizable monuments, located near the Angle and the High Water Mark."
+  },
+  {
+    "name":"High Water Mark Memorial",
+    "lat":39.813,
+    "lng":-77.235,
+    "type":"Monument",
+    "desc":"Marks the symbolic furthest advance of Confederate forces during Pickett's Charge on July 3."
+  }
+]

@@ -274,10 +274,19 @@ function buildForm(){
     schema[type]
     .forEach(field=>{
 
-        html +=
-        "<label>" +
-        field +
-        "</label>";
+      const label =
+    field
+    .replaceAll("_"," ")
+    .replace(
+        /\b\w/g,
+        c => c.toUpperCase()
+    );
+
+html +=
+"<label>" +
+label +
+"</label>";
+
 
        if(field==="desc" || field==="notes"){
 
@@ -346,8 +355,10 @@ document
     const reader =
         new FileReader();
 
-    reader.onload =
-    function(e){
+   reader.onload =
+function(e){
+
+    try{
 
         dataset =
             JSON.parse(
@@ -355,15 +366,27 @@ document
             );
 
         document
-        .getElementById(
-            "status"
-        ).innerHTML =
+            .getElementById(
+                "status"
+            ).innerHTML =
 
-        dataset.length +
-        " records loaded";
+            dataset.length +
+            " records loaded";
 
-    };
+    }
 
+    catch(err){
+
+        console.log(err);
+
+        alert(
+            "Dataset load error: " +
+            err.message
+        );
+
+    }
+
+};
     reader.readAsText(
         file
     );
@@ -466,6 +489,25 @@ function buildRecord(){
 
     schema[type]
     .forEach(field=>{
+
+        if(field==="source"){
+
+            const checked =
+
+                Array.from(
+                    document.querySelectorAll(
+                        ".sourceCheck:checked"
+                    )
+                )
+                .map(
+                    box => box.value
+                );
+
+            record.source =
+                checked.join(",");
+
+            return;
+        }
 
         const control =
 

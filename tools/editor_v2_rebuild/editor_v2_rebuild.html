@@ -279,27 +279,41 @@ function buildForm(){
         field +
         "</label>";
 
-        if(
+       if(field==="desc" || field==="notes"){
 
-            field==="desc"
+    html +=
+    "<textarea id='" +
+    field +
+    "'></textarea>";
 
-        ){
+}
+else if(field==="source"){
 
-            html +=
-            "<textarea id='" +
-            field +
-            "'></textarea>";
+    html +=
+    "<div id='sourceBox'>" +
 
-        }
+    "<label><input type='checkbox' class='sourceCheck' value='PD'> PD - Public Domain</label>" +
+    "<label><input type='checkbox' class='sourceCheck' value='LOC'> LOC - Library of Congress</label>" +
+    "<label><input type='checkbox' class='sourceCheck' value='WKP'> WKP - Wikipedia</label>" +
+    "<label><input type='checkbox' class='sourceCheck' value='NPS'> NPS - National Park Service</label>" +
+    "<label><input type='checkbox' class='sourceCheck' value='OR'> OR - Official Records</label>" +
+    "<label><input type='checkbox' class='sourceCheck' value='GNMP'> GNMP - Gettysburg National Military Park</label>" +
+    "<label><input type='checkbox' class='sourceCheck' value='JH'> JH - Jon Haglund Original Content</label>" +
+    "<label><input type='checkbox' class='sourceCheck' value='AI'> AI - AI Generated Content</label>" +
 
-        else{
 
-            html +=
-            "<input id='" +
-            field +
-            "'>";
+    "</div>";
 
-        }
+}
+else{
+
+    html +=
+    "<input id='" +
+    field +
+    "'>";
+
+}
+
 
     });
 

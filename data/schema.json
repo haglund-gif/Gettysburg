@@ -7,12 +7,15 @@
     "lat",
     "lng",
     "heading",
-    "photo_original",
-    "photo_colorized",
-    "video",
-    "audio",
-    "document",
-    "desc"
+   "photo_original",
+"photo_colorized",
+"video",
+"audio",
+"document",
+"animation",
+"source",
+"citation",
+"desc"
   ],
 
   "Battle":[
@@ -21,10 +24,15 @@
     "period",
     "lat",
     "lng",
-    "video",
-    "audio",
-    "document",
-    "desc"
+   "photo_original",
+"photo_colorized",
+"video",
+"audio",
+"document",
+"animation",
+"source",
+"citation",
+"desc"
   ],
 
   "Terrain":[
@@ -32,9 +40,15 @@
     "name",
     "lat",
     "lng",
-    "photo_original",
-    "video",
-    "desc"
+  "photo_original",
+"photo_colorized",
+"video",
+"audio",
+"document",
+"animation",
+"source",
+"citation",
+"desc"
   ],
 
   "Monument":[
@@ -45,7 +59,12 @@
     "photo_original",
     "photo_colorized",
     "video",
-    "desc"
+"audio",
+"document",
+"animation",
+"source",
+"citation",
+"desc"
   ],
 
   "Artillery":[
@@ -57,10 +76,15 @@
     "lng",
     "guns",
     "heading",
-    "photo_original",
-    "photo_colorized",
-    "video",
-    "desc"
+   "photo_original",
+"photo_colorized",
+"video",
+"audio",
+"document",
+"animation",
+"source",
+"citation",
+"desc"
   ],
 
   "Wagons":[
@@ -70,10 +94,15 @@
     "side",
     "lat",
     "lng",
-    "wagons",
-    "heading",
-    "video",
-    "desc"
+  "photo_original",
+"photo_colorized",
+"video",
+"audio",
+"document",
+"animation",
+"source",
+"citation",
+"desc"
   ],
 
   "Regiment":[
@@ -85,13 +114,15 @@
     "lng",
     "heading",
     "frontage",
-    "strength",
-    "photo_original",
-    "photo_colorized",
-    "video",
-    "audio",
-    "document",
-    "desc"
+    "strength","photo_original",
+"photo_colorized",
+"video",
+"audio",
+"document",
+"animation",
+"source",
+"citation",
+"desc"
   ]
 }
 

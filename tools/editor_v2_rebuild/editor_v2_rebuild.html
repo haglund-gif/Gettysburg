@@ -447,6 +447,40 @@ function findRecord(){
 
     buildForm();
 
+    /* Clear all fields first */
+
+    schema[record.type]
+    .forEach(field => {
+
+        const control =
+
+        document
+        .getElementById(
+            field
+        );
+
+        if(control){
+
+            control.value = "";
+
+        }
+
+    });
+
+    /* Clear source checkboxes */
+
+    document
+    .querySelectorAll(
+        ".sourceCheck"
+    )
+    .forEach(box => {
+
+        box.checked = false;
+
+    });
+
+    /* Load record values */
+
     Object.keys(record)
     .forEach(key=>{
 
@@ -467,7 +501,6 @@ function findRecord(){
     });
 
 }
-
 /* ==========================
    BUILD RECORD
 ========================== */

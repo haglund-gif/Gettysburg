@@ -289,8 +289,10 @@ function buildForm(){
 }
 else if(field==="source"){
 
-    html +=
-    "<div id='sourceBox'>" +
+   html +=
+"<details>" +
+"<summary>Source Codes</summary>" +
+"<div id='sourceBox'>" +
 
     "<label><input type='checkbox' class='sourceCheck' value='PD'> PD - Public Domain</label>" +
     "<label><input type='checkbox' class='sourceCheck' value='LOC'> LOC - Library of Congress</label>" +
@@ -302,7 +304,8 @@ else if(field==="source"){
     "<label><input type='checkbox' class='sourceCheck' value='AI'> AI - AI Generated Content</label>" +
 
 
-    "</div>";
+   "</div>" +
+"</details>";
 
 }
 else{

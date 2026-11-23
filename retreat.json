@@ -1,10 +1,11 @@
 [
   {
     "name":"Lee Begins Withdrawal",
-    "lat":39.820,
-    "lng":-77.250,
-    "type":"Commander",
-    "desc":"Following the failure of Pickett's Charge on July 3, Lee began organizing the withdrawal of the Army of Northern Virginia toward the Potomac River."
+  "lat":39.820,
+  "lng":-77.250,
+  "type":"Commander",
+  "desc":"Following the failure of Pickett's Charge on July 3, Lee began organizing the withdrawal of the Army of Northern Virginia toward the Potomac River.",
+  "video":"videos/commanders/lee to davis proposing invasion.mp4"
   },
   {
     "name":"Fairfield",

@@ -597,31 +597,31 @@ if(activeBtn){
 
             marker.on('click',()=>{
 
-                document.getElementById('info').innerHTML =
-
-                    "<h3 class='infoTitle'>" +
-                    item.name +
-                    "</h3>" +
-
-                    "<b>" +
-                    item.type +
-                    "</b><br><br>" +
+             
 
 
+let html =
+    "<h3 class='infoTitle'>" +
+    item.name +
+    "</h3>" +
+    "<b>" +
+    item.type +
+    "</b><br><br>" +
+    item.desc;
 
-
-                  item.desc +
-
-
-
-                  
-
-"<hr>" +
-
-"<a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>▶ WATCH VIDEO</a>";
+console.log(item.name, item.video);
 
 
 
+if(item.video){
+    html +=
+        "<hr>" +
+        "<a href='" +
+        item.video +
+        "' target='_blank'>▶ Watch Video</a>";
+}
+
+document.getElementById('info').innerHTML = html;
             });
 
             marker.addTo(timelineLayer);

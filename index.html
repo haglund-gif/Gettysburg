@@ -417,14 +417,29 @@ function addItemToMap(item){
     marker.on("click", () => {
 
       
-
 document.getElementById("info").innerHTML =
-    "<h3 class='infoTitle'>" +
-    item.name +
-    "</h3>" +
-    "<b>" + item.type +
-    "</b><br><br>" +
-    item.desc +
+
+ "<h3 class='infoTitle'>" +
+
+ item.name +
+
+ "</h3>" +
+
+ "<b>" + item.type +
+
+ "</b><br><br>" +
+
+ item.desc +
+
+ "<hr>" +
+
+ "<b>GPS:</b> " +
+
+ parseFloat(item.lat).toFixed(6) +
+
+ ", " +
+
+ parseFloat(item.lng).toFixed(6) +
 
    
 
@@ -459,22 +474,22 @@ document.getElementById("info").innerHTML =
 
 
 /* BATTLEFIELD ICONS */const monumentIcon = L.divIcon({
-    html:"<span style='font-size:35px'>🏛️</span>",
+    html:"<span style='font-size:55px'>🏛️</span>",
     className:""
 });
 
 const commanderIcon = L.divIcon({
-    html:"<span style='font-size:35px'>⭐</span>",
+    html:"<span style='font-size:55px'>⭐</span>",
     className:""
 });
 
 const terrainIcon = L.divIcon({
-    html:"<span style='font-size:35px'>⛰️</span>",
+    html:"<span style='font-size:55px'>⛰️</span>",
     className:""
 });
 
 const battleIcon = L.divIcon({
-    html:"<span style='font-size:35px'>⚔️</span>",
+    html:"<span style='font-size:55px'>⚔️</span>",
     className:""
 });
 
@@ -601,13 +616,30 @@ if(activeBtn){
 
 
 let html =
-    "<h3 class='infoTitle'>" +
-    item.name +
-    "</h3>" +
-    "<b>" +
-    item.type +
-    "</b><br><br>" +
-    item.desc;
+
+ "<h3 class='infoTitle'>" +
+
+ item.name +
+
+ "</h3>" +
+
+ "<b>" +
+
+ item.type +
+
+ "</b><br><br>" +
+
+ item.desc +
+
+ "<hr>" +
+
+ "<b>GPS:</b> " +
+
+ parseFloat(item.lat).toFixed(6) +
+
+ ", " +
+
+ parseFloat(item.lng).toFixed(6);
 
 console.log(item.name, item.video);
 
@@ -710,19 +742,43 @@ monumentFiles.forEach(file => {
          
          
          
-            L.circleMarker(
-                [item.lat, item.lng],
-                {
-                    radius: 5,
-                    color: "gray",
-                    fillColor: "gray",
-                    fillOpacity: 0.7
-                }
-            )
-            .addTo(monuments)
-            .bindPopup(
-                `<b>${item.name}</b><br>${item.type}`
-            );
+          const marker = L.circleMarker(
+ [item.lat, item.lng],
+ {
+  radius: 5,
+  color: "gray",
+  fillColor: "gray",
+  fillOpacity: 0.7
+ }
+).addTo(monuments);
+
+marker.bindPopup(
+ `<b>${item.name}</b><br>${item.type}`
+);
+
+marker.on("click", () => {
+
+ document.getElementById("info").innerHTML =
+
+ "<h3 class='infoTitle'>" +
+ item.name +
+ "</h3>" +
+
+ "<b>" + item.type +
+ "</b><br><br>" +
+
+ (item.desc || "Monument") +
+
+ "<hr>" +
+
+ "📍 <b>GPS:</b> " +
+ parseFloat(item.lat).toFixed(6) +
+
+ ", " +
+
+ parseFloat(item.lng).toFixed(6);
+
+});
 
         });
 

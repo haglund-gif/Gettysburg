@@ -1,0 +1,66 @@
+
+
+
+
+
+## Speaker Notes Requirements
+
+For every slide, create a metadata block at the beginning of the Speaker Notes.
+
+Populate the values based on the content of that specific slide.
+
+Do NOT copy sample values from other slides.
+
+Generate appropriate values for each field based on the scene, people, location, and narration represented on that slide.
+
+Use this exact format:
+
+SlideID: [slide ID]
+Title: [slide title without ID]
+Duration: [duration in seconds]
+Location: [primary location]
+People: [comma separated people]
+Units: [comma separated units or blank]
+Sources: [historical sources if known]
+Keywords: [comma separated keywords]
+MediaType: [Image, Video, Map, Animation, or Mixed]
+Status: Draft
+
+Narration:
+
+[slide narration]
+
+For every slide, populate Location, Latitude, and Longitude whenever a specific geographic location is known.
+
+Use decimal degrees.
+
+Examples:
+
+Latitude: 37.5407
+Longitude: -77.4360
+
+Latitude: 39.8309
+Longitude: -77.2311
+
+If the location is not yet known, leave the fields blank.
+
+
+
+Example only:
+
+SlideID: CH1-001-S03
+Title: Lee Meets Davis
+Duration: 120
+Location: Richmond, Virginia
+People: Robert E. Lee, Jefferson Davis
+Units: Army of Northern Virginia
+Sources: Library of Congress
+Keywords: Gettysburg Campaign, Richmond, Invasion Planning
+MediaType: Video
+Status: Draft
+
+Narration:
+
+Following the victory at Chancellorsville...
+
+Do not reuse the example values above except when they are actually correct for a slide.

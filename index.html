@@ -256,7 +256,7 @@ Retreat
 
 
         
-<div id="sidebar">
+<div id="sidebarContent">
 
 <hr>
  
@@ -794,6 +794,17 @@ if(userMarker){
         }
     );
 }
+
+// Mobile menu toggle
+
+const menuBtn = document.getElementById("menuBtn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+});
+
+
 
 </script>
 

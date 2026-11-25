@@ -55,6 +55,27 @@ button{
     border:1px solid #ccc;
 }
 
+
+#storyTree{
+ border:1px solid #ccc;
+ padding:10px;
+ background:#f8f8f8;
+ max-height:500px;
+ overflow:auto;
+ font-family:Consolas, monospace;
+}
+
+.complete{
+ color:green;
+}
+
+.incomplete{
+ color:darkorange;
+}
+
+
+
+
 </style>
 
 </head>
@@ -79,7 +100,12 @@ Schema not loaded
 
 <div class="section">
 
-<h3>Dataset</h3>
+<h3>STEP 1 - Load Map Dataset</h3>
+
+<p>
+Select the master map database JSON file.
+Example: commanders.json
+</p>
 
 <input
 type="file"
@@ -103,9 +129,62 @@ Dataset not loaded
 
 </div>
 
+
+<div class="section">
+
+<h3>Dataset Information</h3>
+
+<div id="datasetInfo">
+
+No dataset loaded
+
+</div>
+
+</div>
+
+
+
+
+
+
 <div class="section">
 
 <h3>Record Type</h3>
+
+
+<div class="section">
+
+<h3>STEP 2 - Import Narrative Story</h3>
+
+<p>
+Select the narrative text file used to build Chapters,
+Story Stops, and Slides.
+Example: Gettysburg-Campaign.txt
+</p>
+
+<input
+    type="file"
+    id="storyImportFile"
+    accept=".txt,.md">
+
+<br><br>
+
+<button onclick="importStoryPackage()">
+    Import Narrative Text
+</button>
+
+<button onclick="downloadStoryDatabase()">
+    Export Story JSON
+</button>
+
+<div id="importStatus">
+    No story package loaded
+</div>
+</div>
+
+
+
+
 
 <select id="recordType"
 onchange="buildForm()">
@@ -150,11 +229,26 @@ Add / Update Record
 
 <button onclick="downloadDataset()">
 
-Download Dataset
+Export Updated JSON
 
 </button>
 
 </div>
+
+
+<div class="section">
+
+<h3>Story Tree</h3>
+
+<div id="storyTree">
+
+No Story Imported
+
+</div>
+
+</div>
+
+
 
 <h3>Preview</h3>
 
@@ -163,10 +257,12 @@ Download Dataset
 <script>
 
 let schema = {};
-
 let dataset = [];
-
 let currentRecord = -1;
+
+let storyDatabase = {
+    chapters:[]
+};
 
 /* ==========================
    LOAD SCHEMA
@@ -366,12 +462,37 @@ function(e){
             );
 
         document
-            .getElementById(
-                "status"
-            ).innerHTML =
+.getElementById(
+    "status"
+).innerHTML =
 
-            dataset.length +
-            " records loaded";
+    dataset.length +
+    " records loaded";
+
+document
+.getElementById(
+    "datasetInfo"
+).innerHTML =
+
+    "<b>Filename:</b> " +
+    file.name +
+
+    "<br><br><b>Records:</b> " +
+    dataset.length +
+
+    "<br><br><b>File Size:</b> " +
+    file.size.toLocaleString() +
+    " bytes" +
+
+    "<br><br><b>Last Modified:</b> " +
+    new Date(
+        file.lastModified
+    ).toLocaleString() +
+
+    "<br><br><b>Source:</b> Browser File Picker" +
+
+    "<br><br><b>Status:</b> Loaded";
+
 
     }
 
@@ -572,6 +693,16 @@ function saveRecord(){
 
         buildRecord();
 
+
+    if(!record.name || record.name.trim()===""){
+        alert("Please enter a name.");
+        return;
+    }
+
+
+
+        
+
     const match =
 
     dataset.findIndex(
@@ -648,7 +779,7 @@ dataset.findIndex(
     );
 
     alert(
-        "Record Saved"
+       "Record stored in memory. Click Download Dataset to create updated JSON."
     );
 
 }
@@ -720,11 +851,598 @@ filename =
         "-updated.json",
         "-updated-" + stamp + ".json"
     );
-
 a.download = filename;
 
 a.click();
+
+document
+.getElementById(
+    "datasetInfo"
+).innerHTML +=
+
+    "<br><br><b>Last Export:</b> " +
+    new Date().toLocaleString() +
+
+    "<br><b>Export File:</b> " +
+    filename;
 }
+
+
+/* ==========================
+   STORY IMPORTER
+========================== */
+
+function importStoryPackage(){
+
+    const input =
+        document.getElementById(
+            "storyImportFile"
+        );
+
+    if(!input.files.length){
+
+        alert(
+            "Select a Story Package text file."
+        );
+
+        return;
+    }
+
+    const file =
+        input.files[0];
+
+    const reader =
+        new FileReader();
+
+    reader.onload =
+    function(e){
+
+        try{
+
+            const text =
+                e.target.result;
+
+            const slides =
+                parseStoryText(
+                    text
+                );
+
+            storyDatabase =
+                buildStoryHierarchy(
+                    slides
+                );
+
+
+renderStoryTree();
+
+
+
+
+            document
+            .getElementById(
+                "importStatus"
+            )
+            .innerHTML =
+                slides.length +
+                " slides imported";
+
+            document
+            .getElementById(
+                "preview"
+            )
+            .textContent =
+                JSON.stringify(
+                    storyDatabase,
+                    null,
+                    2
+                );
+
+        }
+        catch(error){
+
+            console.log(error);
+
+            alert(
+                "Story import failed: " +
+                error.message
+            );
+        }
+    };
+
+    reader.readAsText(file);
+}
+
+function parseStoryText(text){
+
+    const slides = [];
+
+    let chapter = "";
+    let storyStop = "";
+
+    const sections =
+        text.split(
+            "=================================================="
+        );
+
+    sections.forEach(section => {
+
+        section =
+            section.trim();
+
+        if(!section) return;
+
+        if(section.includes("Chapter:")){
+
+            const lines =
+                section
+                .split("\n")
+                .map(
+                    line =>
+                    line.trim()
+                );
+
+            lines.forEach(line => {
+
+                if(
+                    line.startsWith(
+                        "Chapter:"
+                    )
+                ){
+                    chapter =
+                        line
+                        .replace(
+                            "Chapter:",
+                            ""
+                        )
+                        .trim();
+                }
+
+                if(
+                    line.startsWith(
+                        "StoryStop:"
+                    )
+                ){
+                    storyStop =
+                        line
+                        .replace(
+                            "StoryStop:",
+                            ""
+                        )
+                        .trim();
+                }
+            });
+
+            return;
+        }
+
+        const lines =
+            section
+            .split("\n")
+            .map(
+                line =>
+                line.trim()
+            )
+            .filter(
+                line => line !== ""
+            );
+
+        if(lines.length === 0)
+            return;
+
+        const titleLine =
+            lines[0];
+
+        const slideMatch =
+            titleLine.match(
+                /(CH\d+-\d+-S\d+)/
+            );
+
+        if(!slideMatch)
+            return;
+
+        const slide = {
+
+            chapter:
+                chapter,
+
+            storyStop:
+                storyStop,
+
+            slideCode:
+                slideMatch[1],
+
+            slideTitle:
+                titleLine.includes("|")
+                ? titleLine
+                    .split("|")[1]
+                    .trim()
+                : "",
+
+            duration: "",
+
+            location: "",
+
+            people: [],
+
+            units: [],
+
+            sources: [],
+
+            caption: "",
+
+            narration: "",
+
+            status:
+                "complete"
+        };
+
+        let mode = "";
+
+        for(
+            let i=1;
+            i<lines.length;
+            i++
+        ){
+
+            const line =
+                lines[i];
+
+            if(
+                line.includes(
+                    "No speaker notes yet"
+                )
+            ){
+
+                slide.status =
+                    "incomplete";
+
+                continue;
+            }
+
+            if(
+                line.startsWith(
+                    "Duration:"
+                )
+            ){
+
+                const parts =
+                    line.split("|");
+
+                slide.duration =
+                    parts[0]
+                    .replace(
+                        "Duration:",
+                        ""
+                    )
+                    .trim();
+
+                if(parts.length > 1){
+
+                    slide.location =
+                        parts[1]
+                        .replace(
+                            "Location:",
+                            ""
+                        )
+                        .trim();
+                }
+
+                continue;
+            }
+
+            if(
+                line.startsWith(
+                    "People:"
+                )
+            ){
+
+                const parts =
+                    line.split("|");
+
+                slide.people =
+                    parts[0]
+                    .replace(
+                        "People:",
+                        ""
+                    )
+                    .split(",")
+                    .map(
+                        p =>
+                        p.trim()
+                    )
+                    .filter(Boolean);
+
+                if(parts.length > 1){
+
+                    slide.sources =
+                        parts[1]
+                        .replace(
+                            "Sources:",
+                            ""
+                        )
+                        .split(",")
+                        .map(
+                            s =>
+                            s.trim()
+                        )
+                        .filter(Boolean);
+                }
+
+                continue;
+            }
+
+            if(
+                line.startsWith(
+                    "Units:"
+                )
+            ){
+
+                slide.units =
+                    line
+                    .replace(
+                        "Units:",
+                        ""
+                    )
+                    .split(",")
+                    .map(
+                        u =>
+                        u.trim()
+                    )
+                    .filter(Boolean);
+
+                continue;
+            }
+
+            if(
+                line.startsWith(
+                    "Caption:"
+                )
+            ){
+
+                mode =
+                    "caption";
+
+                slide.caption =
+                    line
+                    .replace(
+                        "Caption:",
+                        ""
+                    )
+                    .trim();
+
+                continue;
+            }
+
+            if(
+                mode === "caption"
+            ){
+
+                if(
+                    slide.status ===
+                    "incomplete"
+                ){
+
+                    slide.caption +=
+                        " " +
+                        line;
+
+                    continue;
+                }
+
+                mode =
+                    "narration";
+            }
+
+            if(
+                mode === "narration"
+            ){
+
+                slide.narration +=
+                    line + " ";
+            }
+        }
+
+        slide.caption =
+            slide.caption.trim();
+
+        slide.narration =
+            slide.narration.trim();
+
+        slides.push(
+            slide
+        );
+    });
+
+    return slides;
+}
+
+function buildStoryHierarchy(slides){
+
+    const db = {
+
+        chapters:[]
+    };
+
+    const chapterMap = {};
+
+    slides.forEach(slide => {
+
+        const chapterCode =
+            slide.chapter;
+
+        const stopCode =
+            slide.storyStop;
+
+        if(
+            !chapterMap[
+                chapterCode
+            ]
+        ){
+
+            chapterMap[
+                chapterCode
+            ] = {
+
+                code:
+                    chapterCode,
+
+                storyStops:[]
+            };
+
+            db.chapters.push(
+                chapterMap[
+                    chapterCode
+                ]
+            );
+        }
+
+        let stop =
+            chapterMap[
+                chapterCode
+            ]
+            .storyStops
+            .find(
+                s =>
+                s.code === stopCode
+            );
+
+      if(!stop){
+
+    stop = {
+
+        code: stopCode,
+
+        location: "",
+
+        camera: {
+            lat: "",
+            lng: "",
+            zoom: 12,
+            bearing: 0,
+            pitch: 0,
+            duration: 5000
+        },
+
+        slides: []
+    };
+
+    chapterMap[
+        chapterCode
+    ]
+    .storyStops
+    .push(stop);
+
+}
+
+stop.slides.push(
+    slide
+);
+
+});
+    return db;
+}
+
+
+function renderStoryTree(){
+
+    let html = "";
+
+    storyDatabase.chapters.forEach(chapter => {
+
+        html +=
+            "<b>▼ " +
+            chapter.code +
+            "</b><br><br>";
+
+        chapter.storyStops.forEach(stop => {
+
+            html +=
+                "&nbsp;&nbsp;&nbsp;&nbsp;<b>▼ " +
+                stop.code +
+                "</b><br>";
+
+            stop.slides.forEach(slide => {
+
+                const icon =
+                    slide.status === "complete"
+                    ? "✓"
+                    : "⚠";
+
+                const css =
+                    slide.status === "complete"
+                    ? "complete"
+                    : "incomplete";
+
+                html +=
+                    "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+
+                    "<span class='" +
+                    css +
+                    "'>" +
+
+                    icon +
+
+                    " " +
+
+                    slide.slideCode +
+
+                    " | " +
+
+                    slide.slideTitle +
+
+                    "</span><br>";
+            });
+
+            html += "<br>";
+        });
+
+        html += "<hr>";
+    });
+
+    document
+    .getElementById(
+        "storyTree"
+    )
+    .innerHTML =
+        html;
+}
+
+
+
+function downloadStoryDatabase(){
+
+    const blob =
+        new Blob(
+            [
+                JSON.stringify(
+                    storyDatabase,
+                    null,
+                    2
+                )
+            ],
+            {
+                type:
+                "application/json"
+            }
+        );
+
+    const a =
+        document.createElement(
+            "a"
+        );
+
+    a.href =
+        URL.createObjectURL(
+            blob
+        );
+
+    a.download =
+        "story-database.json";
+
+    a.click();
+}
+
+
 
 /* ==========================
    START

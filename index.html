@@ -559,7 +559,56 @@ const battleIcon = L.divIcon({
 });
 
 
+const confederateInfantryIcon = L.icon({
+    iconUrl: 'images/sprites/confederate-soldier-icon-64.png',
+    iconSize: [32,32],
+    iconAnchor: [16,16]
+});
 
+
+const unionInfantryIcon = L.icon({
+    iconUrl: 'images/sprites/union-soldier-icon-64.png',
+    iconSize: [32,32],
+    iconAnchor: [16,16]
+});
+
+
+
+for(let i=0;i<8;i++){
+
+    L.marker(
+        [39.815, -77.245 + (i * 0.0002)],
+        {icon: confederateInfantryIcon}
+    ).addTo(map);
+
+
+
+
+
+}
+
+
+for(let i=0;i<8;i++){
+
+    L.marker(
+        [39.812, -77.245 + (i * 0.0002)],
+        {icon: unionInfantryIcon}
+    ).addTo(map);
+
+}
+
+
+const pettigrew = L.marker(
+    [39.815,-77.245],
+    {
+        icon: confederateInfantryIcon
+    }
+).addTo(map);
+
+pettigrew.bindPopup(
+    "<b>Pettigrew Brigade</b><br>" +
+    "Sprite Test"
+);
 
 
  

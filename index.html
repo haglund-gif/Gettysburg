@@ -139,7 +139,9 @@ h2{
     font-size:42px;
 }
 
-
+.leaflet-interactive{
+    cursor: crosshair;
+}
 #menuBtn{
     display:none;
 }
@@ -390,20 +392,17 @@ const map = L.map('map').setView([39.830,-77.231],13);
 
 let userMarker = null;
 
-
 const streets = L.tileLayer(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
 {
     attribution:'Tiles © Esri'
-}).addTo(map);
+});
 
 const satellite = L.tileLayer(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
 {
-    attribution:'Tiles © Esri, Maxar, Earthstar Geographics'
-});
-
-
+    attribution:'Tiles © Esri, Maxar, Earthstar Geographics, USDA FSA, USGS'
+}).addTo(map);
 
 
 
@@ -812,9 +811,9 @@ monumentFiles.forEach(file => {
           const marker = L.circleMarker(
  [item.lat, item.lng],
  {
-  radius: 5,
-  color: "gray",
-  fillColor: "gray",
+  radius: 6,
+  color: "white",
+  fillColor: "red",
   fillOpacity: 0.7
  }
 ).addTo(monuments);

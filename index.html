@@ -391,11 +391,25 @@ const map = L.map('map').setView([39.830,-77.231],13);
 let userMarker = null;
 
 
-const osm = L.tileLayer(
+const streets = L.tileLayer(
 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
 {
     attribution:'Tiles © Esri'
 }).addTo(map);
+
+const satellite = L.tileLayer(
+'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+{
+    attribution:'Tiles © Esri, Maxar, Earthstar Geographics'
+});
+
+
+
+
+
+
+
+
 //=================================================
 // ELEVATION OVERLAY (SIMPLE DEMO but works)
 //=================================================
@@ -482,35 +496,23 @@ function addItemToMap(item){
 
       
 document.getElementById("info").innerHTML =
-
  "<h3 class='infoTitle'>" +
-
  item.name +
-
  "</h3>" +
-
  "<b>" + item.type +
-
  "</b><br><br>" +
-
  item.desc +
-
  "<hr>" +
-
  "<b>GPS:</b> " +
-
  parseFloat(item.lat).toFixed(6) +
-
  ", " +
-
  parseFloat(item.lng).toFixed(6) +
-
-   
-
-
-(item.video
- ? "<hr><a href='" + item.video + "' target='_blank'>▶ Watch Video</a>"
- : "");
+ (
+   item.video
+   ? "<hr><a href='" + item.video +
+     "' target='_blank'>▶ Watch Video</a>"
+   : ""
+ );
 
 
 
@@ -562,16 +564,17 @@ const battleIcon = L.divIcon({
 
 
  
-
 L.control.layers(
 {
-    "OpenStreetMap":osm
+   
+    "Street Map": streets,
+    "Satellite": satellite
 },
 {
-    "Monuments":monuments,
-    "Commanders":commanders,
-    "Terrain Features":terrain,
-    "Elevation Overlay":elevationLayer
+    "Monuments": monuments,
+    "Commanders": commanders,
+    "Terrain Features": terrain,
+    "Elevation Overlay": elevationLayer
 }
 ).addTo(map);
 

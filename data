@@ -1,0 +1,274 @@
+[1mdiff --git a/data/Commanders.json b/data/Commanders.json[m
+[1mindex 1637d8e..4ae74d3 100644[m
+[1m--- a/data/Commanders.json[m
+[1m+++ b/data/Commanders.json[m
+[36m@@ -1,11 +1,11 @@[m
+[31m- {[m
+[32m+[m[32m[[m[41m[m
+[32m+[m[32m  {[m[41m[m
+     "name": "George Meade",[m
+     "lat": 39.811,[m
+     "lng": -77.234,[m
+     "type": "Commander",[m
+     "desc": "Commander of the Army of Potomac. This was headquarters of Meade at the Leister house during Gettysburg battle. The house was damaged by the cannon fire."[m
+   },[m
+[31m-[m
+   {[m
+     "name": "Robert E. Lee",[m
+     "lat": 39.814255,[m
+[36m@@ -13,140 +13,123 @@[m
+     "type": "Commander",[m
+     "desc": "Commander of the Army of Northern Virginia."[m
+   },[m
+[31m-[m
+[31m-{[m
+[31m-  "name":"Abraham Lincoln",[m
+[31m-  "lat":39.821,[m
+[31m-  "lng":-77.231,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Sixteenth President of the United States. Lincoln delivered the Gettysburg Address at the cemetery dedication on November 19, 1863."[m
+[31m-},[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-{[m
+[31m-  "name":"James Longstreet",[m
+[31m-  "lat":39.808,[m
+[31m-  "lng":-77.258,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Lee's senior corps commander. Longstreet directed major Confederate attacks against the Union left flank on July 2 and expressed reservations about the July 3 assault that became known as Pickett's Charge."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Winfield Scott Hancock",[m
+[31m-  "lat":39.817,[m
+[31m-  "lng":-77.230,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Commander of the Union II Corps. Hancock helped organize Union defenses on Cemetery Ridge and played a critical role in holding the center of the Federal line."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"John Reynolds",[m
+[31m-  "lat":39.832,[m
+[31m-  "lng":-77.249,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"One of the Union Army's most respected leaders. Reynolds was killed early on July 1 while directing troops north and west of Gettysburg."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"John Buford",[m
+[31m-  "lat":39.834,[m
+[31m-  "lng":-77.251,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Union cavalry commander whose troopers delayed Confederate forces on July 1, buying time for Union infantry to reach and defend the high ground south of town."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Richard S. Ewell",[m
+[31m-  "lat":39.841,[m
+[31m-  "lng":-77.238,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Commander of the Confederate Second Corps. Ewell's forces attacked Culp's Hill and Cemetery Hill and have long been associated with debates over the first day's fighting."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"J.E.B. Stuart",[m
+[31m-  "lat":39.847,[m
+[31m-  "lng":-77.220,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Commander of Confederate cavalry. Stuart arrived late during the Gettysburg Campaign and fought an important cavalry engagement east of Gettysburg on July 3."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"George Pickett",[m
+[31m-  "lat":39.815,[m
+[31m-  "lng":-77.255,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Confederate division commander whose troops formed a major component of the July 3 assault remembered as Pickett's Charge."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Farnsworth's Charge",[m
+[31m-  "lat":39.799,[m
+[31m-  "lng":-77.253,[m
+[31m-  "type":"Battle",[m
+[31m-  "desc":"Union cavalry assault launched late on July 3 against Confederate positions near Big Round Top. The attack suffered heavy losses."[m
+[31m-},[m
+[31m- [m
+[31m- [m
+[31m-{[m
+[31m-  "name":"A. P. Hill",[m
+[31m-  "lat":39.836,[m
+[31m-  "lng":-77.246,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Commanded the Confederate Third Corps. His troops initiated the fighting west of Gettysburg on July 1 and played major roles throughout the battle."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Oliver O. Howard",[m
+[31m-  "lat":39.821,[m
+[31m-  "lng":-77.229,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Commander of the Union XI Corps. He helped establish the Union defensive position centered on Cemetery Hill."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Daniel Sickles",[m
+[31m-  "lat":39.805,[m
+[31m-  "lng":-77.241,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Union III Corps commander. His controversial advance to the Peach Orchard created a vulnerable salient in the Union line."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Lewis Armistead",[m
+[31m-  "lat":39.813,[m
+[31m-  "lng":-77.236,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Confederate brigadier general who crossed the stone wall during Pickett's Charge before being mortally wounded."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"John Gibbon",[m
+[31m-  "lat":39.814,[m
+[31m-  "lng":-77.233,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Union division commander whose troops helped repel Pickett's Charge and hold the center of Cemetery Ridge."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Henry Heth",[m
+[31m-  "lat":39.834,[m
+[31m-  "lng":-77.252,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Confederate division commander whose movement toward Gettysburg on July 1 helped trigger the battle."[m
+[31m-},[m
+[31m-{[m
+[31m-  "name":"Abner Doubleday",[m
+[31m-  "lat":39.832,[m
+[31m-  "lng":-77.247,[m
+[31m-  "type":"Commander",[m
+[31m-  "desc":"Union I Corps commander after Reynolds' death. Directed forces resisting Confederate attacks on the first day."[m
+[31m-},[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Abraham Lincoln",[m[41m[m
+[32m+[m[32m    "lat": 39.821,[m[41m[m
+[32m+[m[32m    "lng": -77.231,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Sixteenth President of the United States. Lincoln delivered the Gettysburg Address at the cemetery dedication on November 19, 1863."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "James Longstreet",[m[41m[m
+[32m+[m[32m    "lat": 39.808,[m[41m[m
+[32m+[m[32m    "lng": -77.258,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Lee's senior corps commander. Longstreet directed major Confederate attacks against the Union left flank on July 2 and expressed reservations about the July 3 assault that became known as Pickett's Charge."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Winfield Scott Hancock",[m[41m[m
+[32m+[m[32m    "lat": 39.817,[m[41m[m
+[32m+[m[32m    "lng": -77.230,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Commander of the Union II Corps. Hancock helped organize Union defenses on Cemetery Ridge and played a critical role in holding the center of the Federal line."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "John Reynolds",[m[41m[m
+[32m+[m[32m    "lat": 39.832,[m[41m[m
+[32m+[m[32m    "lng": -77.249,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "One of the Union Army's most respected leaders. Reynolds was killed early on July 1 while directing troops north and west of Gettysburg."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "John Buford",[m[41m[m
+[32m+[m[32m    "lat": 39.834,[m[41m[m
+[32m+[m[32m    "lng": -77.251,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Union cavalry commander whose troopers delayed Confederate forces on July 1, buying time for Union infantry to reach and defend the high ground south of town."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Richard S. Ewell",[m[41m[m
+[32m+[m[32m    "lat": 39.841,[m[41m[m
+[32m+[m[32m    "lng": -77.238,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Commander of the Confederate Second Corps. Ewell's forces attacked Culp's Hill and Cemetery Hill and have long been associated with debates over the first day's fighting."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "J.E.B. Stuart",[m[41m[m
+[32m+[m[32m    "lat": 39.847,[m[41m[m
+[32m+[m[32m    "lng": -77.220,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Commander of Confederate cavalry. Stuart arrived late during the Gettysburg Campaign and fought an important cavalry engagement east of Gettysburg on July 3."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "George Pickett",[m[41m[m
+[32m+[m[32m    "lat": 39.815,[m[41m[m
+[32m+[m[32m    "lng": -77.255,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Confederate division commander whose troops formed a major component of the July 3 assault remembered as Pickett's Charge."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Farnsworth's Charge",[m[41m[m
+[32m+[m[32m    "lat": 39.799,[m[41m[m
+[32m+[m[32m    "lng": -77.253,[m[41m[m
+[32m+[m[32m    "type": "Battle",[m[41m[m
+[32m+[m[32m    "desc": "Union cavalry assault launched late on July 3 against Confederate positions near Big Round Top. The attack suffered heavy losses."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "A. P. Hill",[m[41m[m
+[32m+[m[32m    "lat": 39.836,[m[41m[m
+[32m+[m[32m    "lng": -77.246,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Commanded the Confederate Third Corps. His troops initiated the fighting west of Gettysburg on July 1 and played major roles throughout the battle."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Oliver O. Howard",[m[41m[m
+[32m+[m[32m    "lat": 39.821,[m[41m[m
+[32m+[m[32m    "lng": -77.229,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Commander of the Union XI Corps. He helped establish the Union defensive position centered on Cemetery Hill."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Daniel Sickles",[m[41m[m
+[32m+[m[32m    "lat": 39.805,[m[41m[m
+[32m+[m[32m    "lng": -77.241,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Union III Corps commander. His controversial advance to the Peach Orchard created a vulnerable salient in the Union line."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Lewis Armistead",[m[41m[m
+[32m+[m[32m    "lat": 39.813,[m[41m[m
+[32m+[m[32m    "lng": -77.236,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Confederate brigadier general who crossed the stone wall during Pickett's Charge before being mortally wounded."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "John Gibbon",[m[41m[m
+[32m+[m[32m    "lat": 39.814,[m[41m[m
+[32m+[m[32m    "lng": -77.233,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Union division commander whose troops helped repel Pickett's Charge and hold the center of Cemetery Ridge."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Henry Heth",[m[41m[m
+[32m+[m[32m    "lat": 39.834,[m[41m[m
+[32m+[m[32m    "lng": -77.252,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Confederate division commander whose movement toward Gettysburg on July 1 helped trigger the battle."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+[32m+[m[32m  {[m[41m[m
+[32m+[m[32m    "name": "Abner Doubleday",[m[41m[m
+[32m+[m[32m    "lat": 39.832,[m[41m[m
+[32m+[m[32m    "lng": -77.247,[m[41m[m
+[32m+[m[32m    "type": "Commander",[m[41m[m
+[32m+[m[32m    "desc": "Union I Corps commander after Reynolds' death. Directed forces resisting Confederate attacks on the first day."[m[41m[m
+[32m+[m[32m  },[m[41m[m
+   {[m
+     "name": "Joshua Chamberlain",[m
+     "lat": 39.791,[m
+     "lng": -77.236,[m
+     "type": "Commander",[m
+     "desc": "Commander of the 20th Maine."[m
+[31m-  },[m
+[31m-[m
+[31m-[m
+[32m+[m[32m  }[m[41m[m
+[32m+[m[32m][m
+\ No newline at end of file[m

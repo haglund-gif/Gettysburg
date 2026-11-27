@@ -1,0 +1,237 @@
+Gettysburg Education Schema v1.0 (Frozen)
+{
+  "education": {
+    "gradeLevel": "6-12",
+    "themes": [],
+    "curriculumTags": [],
+    "essentialQuestion": "",
+    "studentQuestion": "",
+    "studentAnswer": "",
+    "discussionPrompt": "",
+    "teacherNote": "",
+    "takeaway": "",
+    "quizQuestion": "",
+    "quizAnswer": "",
+    "scavengerQuestion": "",
+    "scavengerAnswer": "",
+    "scavengerPoints": 0,
+    "homeworkPrompt": "",
+    "youtubeVideo": "",
+    "youtubeFollowup": ""
+  }
+}
+
+Source Attribution Schema v1.0 (Frozen
+{
+  "sources": {
+    "primary": [],
+    "secondary": [],
+    "gpsSource": "",
+    "imageSource": "",
+    "videoSource": "",
+    "educationSources": [],
+    "lastReviewed": "",
+    "reviewedBy": ""
+  }
+}
+
+Recommended Curriculum Tags
+
+[
+  "Leadership",
+  "Courage",
+  "Determination",
+  "Decision Making",
+  "Military Strategy",
+  "Terrain",
+  "Artillery",
+  "Infantry",
+  "Cavalry",
+  "Civil War Causes",
+  "Emancipation",
+  "African American History",
+  "Citizenship",
+  "Lincoln",
+  "Gettysburg Address",
+  "Medical Care",
+  "Civilian Life",
+  "Technology",
+  "Communications"
+]
+
+Recommended Themes
+JSON
+[
+"Leadership",
+"Courage",
+"Sacrifice",
+"Decision Making",
+"Innovation",
+"Citizenship",
+"Freedom",
+"Perseverance",
+"Service",
+"Historical Memory"
+]
+ Cinema Schema v1.0 (Frozen)
+{
+  "id": "",
+  "title": "",
+  "enabled": true,
+  "lat": 0,
+  "lng": 0,
+  "zoom": 15,
+  "flySpeed": 3,
+  "duration": 15,
+  "type": "",
+  "target": "",
+  "video": "",
+  "audio": "",
+  "caption": "",
+  "showMarker": true,
+  "showSidebar": false,
+  "autoplay": true,
+  "pauseAfter": false
+}
+{
+  "id": "LITTLE_ROUND_TOP",
+  "title": "Defense of Little Round Top",
+  "type": "Terrain",
+  "target": "Little Round Top",
+  "video": "videos/little-round-top.mp4"
+}
+
+Architecture Decision (Frozen)
+Plain Text
+Battlefield Data
+?
+Education Layer
+?
+Cinema Layer
+?
+Teacher Mode
+?
+Student Mode
+?
+Scavenger Hunts
+?
+Quiz Mode
+?
+YouTube Follow-up
+
+
+Field Definitions
+essentialQuestion
+The big idea.
+Example:
+JSON
+"essentialQuestion":
+"Why does terrain influence military outcomes?"
+
+studentQuestion
+Simple factual question.
+JSON
+"studentQuestion":
+"Who defended Little Round Top?"
+
+studentAnswer
+JSON
+"studentAnswer":
+"Joshua Chamberlain and the 20th Maine."
+
+discussionPrompt
+No single right answer.
+JSON
+"discussionPrompt":
+"Would you have ordered this attack?"
+
+teacherNote
+Visible only in Teacher Mode.
+JSON
+"teacherNote":
+"Discuss high ground and observation."
+
+takeaway
+The lesson.
+JSON
+"takeaway":
+"Terrain often determines military success."
+
+scavengerQuestion
+Field-trip activity.
+JSON
+"scavengerQuestion":
+"Find the commander who stood here."
+
+scavengerAnswer
+JSON
+"scavengerAnswer":
+"Robert E. Lee"
+
+scavengerPoints
+JSON
+"scavengerPoints":
+25
+
+quizQuestion
+JSON
+"quizQuestion":
+"Which army held this position?"
+
+quizAnswer
+JSON
+"quizAnswer":
+"Union Army"
+
+homeworkPrompt
+For after the trip.
+JSON
+"homeworkPrompt":
+"Identify another battle where high ground played a decisive role."
+
+youtubeVideo
+JSON
+"youtubeVideo":
+"little-round-top-defense"
+
+youtubeFollowup
+JSON
+"youtubeFollowup":
+"Watch the complete Chamberlain story."
+
+Why this is powerful
+A single monument could support:
+* Tourist Mode
+* Student Mode
+* Teacher Mode
+* Scavenger Hunt
+* Quiz Mode
+* Homework
+* Field Trip
+* YouTube follow-up
+without changing the code.
+Just data.
+
+Future Modes This Enables
+Plain Text
+Normal Visitor Mode
+ 
+Cinema Mode
+ 
+Teacher Mode
+ 
+Student Mode
+ 
+Scavenger Hunt Mode
+ 
+Quiz Mode
+ 
+Classroom Mode
+all from the same battlefield database.
+
+My biggest takeaway from today's discussion is this:
+Cinema Mode is cool. Teacher Mode may be transformational.
+Lots of people have built Gettysburg maps.
+Very few have built:
+"A complete Gettysburg field-trip platform for teachers and students
+

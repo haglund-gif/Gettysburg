@@ -213,6 +213,13 @@ h2{
     <button onclick="doSearch()">Search</button>
 
 
+<button onclick="showObservationView()">
+    Observe
+</button>
+
+
+
+
 <button id="btn-prebattle"
         onclick="loadPeriod('prebattle')">
 Pre-Battle
@@ -238,7 +245,9 @@ July 3
 Retreat
 </button>
 
-
+<button onclick="showObservationView()">
+    OBSERVE
+</button>
 
 
 
@@ -640,6 +649,37 @@ L.control.layers(
 //=================================================
 // SEARCH   code above is labels for small box quotes are labels
 //=================================================
+
+function showObservationView() {
+
+    fetch('data/ObservationTargets.json')
+    .then(response => response.json())
+    .then(data => {
+
+    let html =
+    "<h3 class='infoTitle'>Observation View</h3>" +
+    "<b>Major Battlefield Features</b><hr>";
+
+        data.ObservationTargets.forEach(target => {
+
+            html += target + "<br>";
+
+        });
+
+        document.getElementById("info").innerHTML = html;
+
+    })
+    .catch(error => {
+
+        console.error(
+            "Observation Targets load failed",
+            error
+        );
+
+    });
+
+}
+
 
 function doSearch() {
 

@@ -1,0 +1,216 @@
+GETTYSBURG SEARCH INVENTORY
+Version: 1 (Frozen)
+
+PURPOSE
+
+Defines all data sources available to the Search engine.
+
+Search returns matching objects from any searchable file.
+
+Observation View, Routes, Timeline, Education, and future
+features all rely upon Search.
+
+
+=========================================================
+SEARCHABLE DATA SOURCES
+=========================================================
+
+1. TERRAIN
+
+File:
+    terrain.json
+
+Object Type:
+    Terrain
+
+Examples:
+    Little Round Top
+    Big Round Top
+    Devil's Den
+    The Wheatfield
+    Peach Orchard
+    Cemetery Hill
+    Cemetery Ridge
+    Culp's Hill
+
+Contains GPS:
+    YES
+
+Used By:
+    Search
+    Observation View
+    Routes
+    Timeline
+
+
+=========================================================
+
+2. LOCATIONS
+
+File:
+    locations.json
+
+Object Type:
+    Town
+    CampaignSite
+    Terrain
+
+Examples:
+    Gettysburg
+    Taneytown
+    Hanover
+    Carlisle
+    Cashtown
+    Fairfield
+    Emmitsburg
+    Westminster
+    Hagerstown
+    South Mountain
+    Monterey Pass
+    Pipe Creek
+
+Contains GPS:
+    YES
+
+Used By:
+    Search
+    Observation View
+    Routes
+    Timeline
+
+
+=========================================================
+
+3. COMMANDERS
+
+File:
+    Commanders.json
+
+Object Type:
+    Commander
+
+Examples:
+    Lee
+    Meade
+    Hancock
+    Longstreet
+    Chamberlain
+
+Contains GPS:
+    SOMETIMES
+
+Used By:
+    Search
+    Routes
+    Education
+    Timeline
+
+
+=========================================================
+
+4. MONUMENTS
+
+Files:
+
+    monuments/artillery/
+    monuments/cavalry/
+    monuments/commanders/
+    monuments/engineers/
+    monuments/infantry/
+    monuments/memorials/
+
+Object Type:
+    Monument
+
+Contains GPS:
+    YES
+
+Used By:
+    Search
+    Observation View
+    Routes
+
+
+=========================================================
+
+5. STORY EVENTS
+
+Files:
+
+    prebattle.json
+    july1.json
+    july2.json
+    july3.json
+    retreat.json
+
+Object Type:
+    Event
+
+Examples:
+    Opening of battle
+    Pickett's Charge
+    Retreat to Virginia
+
+Contains GPS:
+    Optional
+
+Used By:
+    Search
+    Timeline
+    Education
+    Routes
+
+
+=========================================================
+OBSERVATION VIEW
+=========================================================
+
+Curated Target Source:
+
+    ObservationTargets.json
+
+Observation View may also display:
+
+    Any Search result that contains GPS coordinates.
+
+Examples:
+
+    Hanover
+    Taneytown
+    Pipe Creek
+    South Mountain
+    Little Round Top
+    Devil's Den
+
+Search-added targets are temporary and are discarded
+when Observation View closes.
+
+
+=========================================================
+NAMING RULE
+=========================================================
+
+Names should be consistent across files.
+
+Example:
+
+    "The Wheatfield"
+
+should appear exactly the same wherever referenced.
+
+Avoid alternate spellings for searchable objects.
+
+
+=========================================================
+FROZEN PRINCIPLE
+=========================================================
+
+Search finds things.
+
+Observation View points at things.
+
+Routes organize things.
+
+Timeline explains things.
+
+Breadcrumbs record things.

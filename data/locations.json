@@ -1,0 +1,86 @@
+[
+  {
+    "name":"Gettysburg",
+    "lat":39.8309,
+    "lng":-77.2311,
+    "type":"Town",
+    "desc":"Pennsylvania town at the center of the Gettysburg Campaign."
+  },
+  {
+    "name":"Taneytown",
+    "lat":39.6573,
+    "lng":-77.1744,
+    "type":"Town",
+    "desc":"Meade headquarters area during part of the campaign."
+  },
+  {
+    "name":"Hanover",
+    "lat":39.8007,
+    "lng":-76.9836,
+    "type":"Town",
+    "desc":"Site of cavalry actions before Gettysburg."
+  },
+  {
+    "name":"Carlisle",
+    "lat":40.2015,
+    "lng":-77.1950,
+    "type":"Town",
+    "desc":"Confederate operations north of Gettysburg."
+  },
+  {
+    "name":"Cashtown",
+    "lat":39.9473,
+    "lng":-77.3597,
+    "type":"Town",
+    "desc":"Lee's army concentrated west of Gettysburg near Cashtown."
+  },
+  {
+    "name":"Fairfield",
+    "lat":39.7876,
+    "lng":-77.3680,
+    "type":"Town",
+    "desc":"Important location on the western approaches to Gettysburg."
+  },
+  {
+    "name":"Emmitsburg",
+    "lat":39.7048,
+    "lng":-77.3264,
+    "type":"Town",
+    "desc":"Town south of Gettysburg on the Emmitsburg Road."
+  },
+  {
+    "name":"Westminster",
+    "lat":39.5754,
+    "lng":-76.9958,
+    "type":"Town",
+    "desc":"Important Union supply and communications center."
+  },
+  {
+    "name":"Hagerstown",
+    "lat":39.6418,
+    "lng":-77.7200,
+    "type":"Town",
+    "desc":"Major Maryland location during the campaign and retreat."
+  },
+  {
+    "name":"South Mountain",
+    "lat":39.5580,
+    "lng":-77.6180,
+    "type":"Terrain",
+    "desc":"Mountain barrier influencing movement during the campaign."
+  },
+  {
+    "name":"Monterey Pass",
+    "lat":39.7935,
+    "lng":-77.4367,
+    "type":"Terrain",
+    "desc":"Important mountain pass during the Confederate retreat."
+  },
+  {
+    "name":"Pipe Creek",
+    "lat":39.6160,
+    "lng":-77.0500,
+    "type":"CampaignSite",
+    "desc":"Proposed defensive line considered by Meade before Gettysburg."
+  }
+]

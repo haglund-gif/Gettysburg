@@ -559,6 +559,20 @@ const battleIcon = L.divIcon({
 });
 
 
+const unionRegimentFlagIcon = L.icon({
+    iconUrl: 'images/sprites/us regiment flag 64 x 16.png',
+    iconSize: [64,16],
+    iconAnchor: [8,8]
+});
+
+const confederateRegimentFlagIcon = L.icon({
+    iconUrl: 'images/sprites/confederat regiment flag 64 x 16 pixels.png',
+    iconSize: [64,16],
+    iconAnchor: [8,8]
+});
+
+
+
 const confederateInfantryIcon = L.icon({
     iconUrl: 'images/sprites/confederate-soldier-icon-64.png',
     iconSize: [32,32],
@@ -577,25 +591,22 @@ const unionInfantryIcon = L.icon({
 for(let i=0;i<8;i++){
 
     L.marker(
-        [39.815, -77.245 + (i * 0.0002)],
-        {icon: confederateInfantryIcon}
+        [39.815, -77.245 + (i * 0.0004)],
+        {icon: confederateRegimentFlagIcon}
     ).addTo(map);
 
-
-
-
-
 }
-
 
 for(let i=0;i<8;i++){
 
     L.marker(
-        [39.812, -77.245 + (i * 0.0002)],
-        {icon: unionInfantryIcon}
+        [39.812, -77.245 + (i * 0.0004)],
+        {icon: unionRegimentFlagIcon}
     ).addTo(map);
 
 }
+
+
 
 
 const pettigrew = L.marker(
@@ -653,21 +664,24 @@ function doSearch() {
 
             entry.marker.openPopup();
 
-            document.getElementById("info").innerHTML =
+ let html =
     "<h3 class='infoTitle'>" +
     entry.item.name +
     "</h3>" +
     "<b>" +
     entry.item.type +
     "</b><br><br>" +
-    entry.item.desc +
+    entry.item.desc;
 
-    "<hr>" +
+if(entry.item.video){
+    html +=
+        "<hr>" +
+        "<a href='" +
+        entry.item.video +
+        "' target='_blank'>▶ Watch Video</a>";
+}
 
-    "<a href='videos/commanders/lee to davis proposing invasion.mp4' target='_blank'>" +
-    "▶ Watch VIDEO" +
-
-    "</a>";
+document.getElementById("info").innerHTML = html;
 
             return;
         }
@@ -828,7 +842,27 @@ fetch('data/terrain.json')
 });
 
 
- 
+ /* LOCATIONS */
+
+fetch('data/locations.json')
+.then(response => response.json())
+.then(data => {
+
+    data.forEach(item => {
+
+        addItemToMap(item);
+
+    });
+
+})
+.catch(error => {
+
+    console.error(
+        "Locations load failed",
+        error
+    );
+
+});
 
 
 
